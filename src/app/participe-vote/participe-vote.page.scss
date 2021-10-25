@@ -8,24 +8,23 @@ ion-header{
         color: #0394DD;
       }
 
-    .element-position{
-      display: flex;
-      justify-content:space-between;
-      margin-top:1.5em;
-
-      ion-button{
-        --border-radius: 12px;
-        height: 35px;
-        margin-top: 0.0em;
-        margin-right: 0.4em;
-       --background: #e4f3fb;
-       --color: #0394DD;
+      .title-position{
+        display:flex;
+        justify-content:space-between;
       }
 
-      ion-searchbar{
-        --border-radius: 10px;
+      ion-icon{
+        color:grey;
       }
-    }
+
+      .search-position{
+        margin-top:0.3em;
+      }
+  }
+
+  ion-searchbar{
+    --border-radius:8px;
+    --box-shadow: none;
   }
 }
 
@@ -66,5 +65,21 @@ ion-content{
     display:flex;
     justify-content:space-between;
     margin-top:-4.5em;
+  }
+
+  .segment{
+    --background:none;
+    margin:0.5em;
+  } 
+
+  ion-segment-button {
+    --color-checked: #FFFF;
+    --background-checked: linear-gradient(to right, #0062CC, #0083CB)!important;
+    --border-radius:10px;
+    --color: rgb(167, 166, 166);
+    --indicator-color: none;
+    text-transform: none;
+    padding: 0;
+   
   }
 }

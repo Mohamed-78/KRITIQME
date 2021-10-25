@@ -1,17 +1,132 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <div class="header-position">
+     <ion-button fill="clear" color="dark">
+      <img src="../../assets/menu_bar.svg">
+    </ion-button>
+     <img src="../../assets/img/logo.png" class="logo">
+     <ion-button fill="clear"  color="dark">
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <div class="ion-padding button-position">
+    <ion-button mode="ios" size="small">Evènements</ion-button>
+    <ion-button mode="ios" size="small">Consulter le Top 10 du mois</ion-button>
+  </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div>
+    <h6 class="text-pp">Personnalités Politiques</h6>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="red-card">
+            <div class="red-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/kobenan.jpg">
+            <h6>Kobenan Adjoumani</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="success-card">
+            <div class="success-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/Pr.jpg">
+            <h6>Pr.Alassane Ouattara</h6>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <div class="middle-button">
+        <ion-button size="small" [routerLink]="['/participe-vote']" mode="ios">Participer au vote</ion-button>
+      </div>
+    </ion-grid>
+  </div>
+  <div>
+    <h6 class="text-pp">Personnalités Mondaine</h6>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="success-card">
+            <div class="success-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/arafat.jpg">
+            <h6>Ange Didier Houon</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="red-card">
+            <div class="red-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/drogba.jpg">
+            <h6>Didier Drogba </h6>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <div class="middle-button">
+        <ion-button size="small" mode="ios">Participer au vote</ion-button>
+      </div>
+    </ion-grid>
+  </div>
+  <div>
+    <h6 class="text-pp">Entreprises publiques</h6>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="red-card">
+            <div class="red-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/sotra.jpg">
+            <h6>LA SOTRA</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="success-card">
+            <div class="success-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/air.jpg">
+            <h6>AIR CÔTE D'IVOIRE</h6>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <div class="middle-button">
+        <ion-button size="small" mode="ios">Participer au vote</ion-button>
+      </div>
+    </ion-grid>
+  </div>
+   <div>
+    <h6 class="text-pp">Entreprises privées</h6>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="red-card">
+            <div class="red-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/sodeci.jpg">
+            <h6>SODECI</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="success-card">
+            <div class="success-icon">
+              <ion-icon name="trending-down" color="light"></ion-icon>
+            </div>
+            <img src="../../assets/img/jumia.jpg">
+            <h6>JUMIA-CI</h6>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <div class="middle-button">
+        <ion-button size="small" mode="ios">Participer au vote</ion-button>
+      </div>
+    </ion-grid>
+  </div>
 </ion-content>

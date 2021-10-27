@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'participe-vote',
     loadChildren: () => import('./participe-vote/participe-vote.module').then( m => m.ParticipeVotePageModule)
+  },
+  {
+    path: 'reglage',
+    loadChildren: () => import('./reglage/reglage.module').then( m => m.ReglagePageModule)
   }
 ];
 @NgModule({

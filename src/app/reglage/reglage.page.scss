@@ -1,0 +1,64 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      --background: #0394DD;
+      height: 4.5em;
+      h5{
+        color: #FFFFFF;
+      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        color:white;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+  }
+
+}
+
+ion-content{
+  h4.title{
+    font-weight: 600;
+  }
+
+  .top{
+    margin-top:-1em;
+  }
+
+  .menu-position{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: -1em;
+
+    ion-button{
+      margin-top: 0.6em;
+    }
+  }
+
+  .ref-position{
+    display:flex;
+    justify-content:space-between;
+
+    span.sub-text{
+      font-size: 11px;
+      color: grey;
+    }
+
+    ion-toggle{
+      margin-top: 0.6em;
+      --handle-background-checked: #fff url(/assets/allumer.png) no-repeat center / contain;
+       width: 70px;
+       --background-checked:#41AA37;
+    }
+  }
+}

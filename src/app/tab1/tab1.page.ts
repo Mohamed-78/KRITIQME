@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  public toggled: boolean = false;
+
+  constructor() {this.toggled = false;}
+
+  public toggle(): void {
+    this.toggled = !this.toggled;
+  }
+
+  cancelSearch($event){
+    this.toggle();
+  }
+
+  onChange($event) {
+    console.log($event);
+  }
+
 
 }

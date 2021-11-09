@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="bg-img">
+    <div class="ion-padding">
+      <div class="img-header">
+       <ion-button fill="clear" class="close_btn_position" (click)="closeModal()">
+        <ion-icon color="light"  name="close-outline">
+        </ion-icon>
+      </ion-button>
+      <h6>Merci d'avoir voté pour</h6>
+      <img src="../../assets/img/a9.jpg">
+    </div>
+    <div class="name">
+      <p>Mamadou Koulibaly</p>
+    </div>
+    <p class="sub_element">Voulez-vous donner un avis ?</p>
+  </div>
+  <div class="middle-button">
+    <ion-button mode="ios" fill="clear" color="light" (click)="redirectTo_avis()">
+     Oui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </ion-button>
+    <ion-button  mode="ios" fill="clear" color="light" (click)="redirectBack()">
+      Non
+    </ion-button>
+  </div>
+</div>
+</ion-content>

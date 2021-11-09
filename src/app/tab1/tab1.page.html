@@ -1,19 +1,23 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-  <div class="header-position">
-     <ion-button fill="clear" color="dark">
+    <div class="header-position">
+     <ion-button fill="clear" color="dark" *ngIf="!toggled">
       <img src="../../assets/menu_bar.svg">
     </ion-button>
-     <img src="../../assets/img/logo.png" class="logo">
-     <ion-button fill="clear"  color="dark">
+    <img src="../../assets/img/logo.png" class="logo" *ngIf="!toggled">
+    <ion-button fill="clear"  color="dark"  *ngIf="!toggled" (click)="toggle()">
       <ion-icon name="search-outline"></ion-icon>
     </ion-button>
-  </div>
-  <div class="ion-padding button-position">
-    <ion-button mode="ios" size="small">Evènements</ion-button>
-    <ion-button mode="ios" size="small">Consulter le Top 10 du mois</ion-button>
-  </div>
-  </ion-toolbar>
+    <ion-searchbar placeholder="Effectuer vos recherches ici" 
+    (ionIput)="searchThis($event)" (ionCancel)="cancelSearch($event)" 
+    [showCancelButton]="true" *ngIf="toggled" mode="ios" cancelButtonText="Fermer">
+  </ion-searchbar>
+</div>
+<div class="ion-padding button-position">
+  <ion-button mode="ios" size="small">Evènements</ion-button>
+  <ion-button mode="ios" size="small">Consulter le Top 10 du mois</ion-button>
+</div>
+</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -101,7 +105,7 @@
       </div>
     </ion-grid>
   </div>
-   <div>
+  <div>
     <h6 class="text-pp">Entreprises privées</h6>
     <ion-grid>
       <ion-row>

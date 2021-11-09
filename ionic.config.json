@@ -1,5 +1,7 @@
 {
   "name": "KRITIQME",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

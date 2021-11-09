@@ -25,13 +25,14 @@ ion-header{
   ion-searchbar{
     --border-radius:8px;
     --box-shadow: none;
+    margin-top: 0.5em;
   }
 }
 
 ion-content{
   .img-position{
     display:flex;
-   justify-content:space-between;
+   justify-content:left;
 
     img{
       width: 100px;
@@ -80,6 +81,7 @@ ion-content{
     --indicator-color: none;
     text-transform: none;
     padding: 0;
+    min-height: 30px;
    
   }
 }

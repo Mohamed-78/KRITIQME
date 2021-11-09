@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { VoterComponent } from './voter/voter.component';
+import { DonnerAvisComponent } from  './donner-avis/donner-avis.component';
+
 
 const routes: Routes = [
   {
@@ -25,6 +28,10 @@ const routes: Routes = [
   {
     path: 'reglage',
     loadChildren: () => import('./reglage/reglage.module').then( m => m.ReglagePageModule)
+  },
+  {
+    path: 'avis',
+    loadChildren: () => import('./avis/avis.module').then( m => m.AvisPageModule)
   }
 ];
 @NgModule({

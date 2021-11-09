@@ -10,7 +10,7 @@
       </ion-button>
       <ion-searchbar placeholder="Effectuer vos recherches ici" 
         (ionIput)="searchThis($event)" (ionCancel)="cancelSearch($event)" 
-        [showCancelButton]="true" *ngIf="toggled">
+        [showCancelButton]="true" *ngIf="toggled" mode="ios"  cancelButtonText="Fermer">
       </ion-searchbar>
     </div>
   </ion-toolbar>
@@ -30,10 +30,10 @@
         <img src="../../assets/img/a9.jpg">
         <h6>Mamadou Koulibaly<br>
           <span><b>Fonction</b>:Enseignant-chercheur&nbsp;...</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:45097</span>
         </h6>
-        <ion-button size="small" mode="ios">Votez</ion-button>
+        <ion-button size="small" mode="ios" (click)="voter()">Votez</ion-button>
       </div>
     </div>
     <div>
@@ -41,7 +41,7 @@
         <img src="../../assets/img/a7.jpg">
         <h6>Kobenan Adjoumani<br>
           <span><b>Fonction</b>:Ministre de l'Agriculture&nbsp;...</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:45097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -52,7 +52,7 @@
         <img src="../../assets/img/a10.jpg">
         <h6>CIE<br>
           <span><b>Fonction</b>:Compagnie Ivoirienne..</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:45097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -63,7 +63,7 @@
         <img src="../../assets/img/a1.jpg">
         <h6>Ange Didier Houan<br>
           <span><b>Fonction</b>:Artiste chanteur, danseur</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:10097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -74,7 +74,7 @@
         <img src="../../assets/img/a3.jpg">
         <h6>N’guessan B.P Amessan<br>
           <span><b>Fonction</b>:Artiste auteur-composit...</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:10097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -85,7 +85,7 @@
         <img src="../../assets/img/a4.jpg">
         <h6>YOBO Constant Joël<br>
           <span><b>Fonction</b>:Artiste auteur-composit...</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:10097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -96,7 +96,7 @@
         <img src="../../assets/img/a5.jpg">
         <h6>N’Guessan B.Yves-Aymard<br>
           <span><b>Fonction</b>:Animateur radio -télé</span><br>
-          <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+          <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
           <span><b>Total votes</b>:10097</span>
         </h6>
         <ion-button size="small" mode="ios">Votez</ion-button>
@@ -110,7 +110,7 @@
           <img src="../../assets/img/a11.jpg">
           <h6>TamSir<br>
             <span><b>Fonction</b>:Arrangeur&nbsp;beat maker</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -121,7 +121,7 @@
           <img src="../../assets/img/a2.jpg">
           <h6>Didier Drogba<br>
             <span><b>Fonction</b>:Footaballeur&nbsp;international</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -132,7 +132,7 @@
           <img src="../../assets/img/a1.jpg">
           <h6>Ange Didier Houan<br>
             <span><b>Fonction</b>:Artiste chanteur, danseur</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -143,7 +143,7 @@
           <img src="../../assets/img/a3.jpg">
           <h6>N’guessan B.P Amessan<br>
             <span><b>Fonction</b>:Artiste auteur-composit...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -156,7 +156,7 @@
           <img src="../../assets/img/a6.jpg">
           <h6>Hamed Bakayoko<br>
             <span><b>Fonction</b>:Ancien Premier ministre...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -167,7 +167,7 @@
           <img src="../../assets/img/a8.jpg">
           <h6>Bruno Koné<br>
             <span><b>Fonction</b>:Ministre du logement...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -178,7 +178,7 @@
           <img src="../../assets/img/a7.jpg">
           <h6>Kobenan Adjoumani<br>
             <span><b>Fonction</b>:Ministre de l'Agriculture&nbsp;...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -189,7 +189,7 @@
           <img src="../../assets/img/a12.jpg">
           <h6>Mariatou Koné<br>
             <span><b>Fonction</b>:Ministre de l'Education...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -202,7 +202,7 @@
           <img src="../../assets/img/sotra.jpg">
           <h6>Sotra<br>
             <span><b>Fonction</b>:Société des Transports...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -213,7 +213,7 @@
           <img src="../../assets/img/a13.jpg">
           <h6>Fraternité Matin<br>
             <span><b>Fonction</b>:Quotidien ivoirien de la..</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -224,7 +224,7 @@
           <img src="../../assets/img/a14.jpg">
           <h6>Sodefor<br>
             <span><b>Fonction</b>:Société de développem&nbsp;...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -235,7 +235,7 @@
           <img src="../../assets/img/a15.jpg">
           <h6>Onep<br>
             <span><b>Fonction</b>:Office National de l'Eau...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:10097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -248,7 +248,7 @@
           <img src="../../assets/img/orange.jpg">
           <h6>Orange ci<br>
             <span><b>Fonction</b>:Société de téléphonie...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -259,7 +259,7 @@
           <img src="../../assets/img/a16.jpg">
           <h6>Total<br>
             <span><b>Fonction</b>:Société multi-énergies...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -270,7 +270,7 @@
           <img src="../../assets/img/a18.jpg">
           <h6>NCI<br>
             <span><b>Fonction</b>:Nouvelle Chaîne Ivoiri..</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>
@@ -281,7 +281,7 @@
           <img src="../../assets/img/a19.jpg">
           <h6>Wave ci<br>
             <span><b>Fonction</b>:Operateur financier mo...</span><br>
-            <span><b>Position</b>:3ieme / 100  <ion-icon name="trending-up" color="success"></ion-icon></span><br>
+            <span><b>Position</b>:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span><br>
             <span><b>Total votes</b>:45097</span>
           </h6>
           <ion-button size="small" mode="ios">Votez</ion-button>

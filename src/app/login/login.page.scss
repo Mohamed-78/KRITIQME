@@ -6,6 +6,7 @@ ion-header{
 
 	ion-toolbar{
 		img{
+			margin-top:1em;
 			width: 35%;
 		}
 	}
@@ -152,6 +153,10 @@ ion-content{
 	  img{
 	  	width: 20px;margin-bottom:0.4em;
 	  }
+	}
+
+	ion-label{
+		font-family: Montserrat, sans-serif;
 	}
 
 }

@@ -1,0 +1,143 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      --background: #0394DD;
+      height: 4.5em;
+      h5{
+        color: #FFFFFF;
+      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        color:white;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+  }
+
+}
+
+ion-content{
+
+  .segment{
+    --background:none;
+  } 
+
+  ion-segment-button {
+    --color-checked: #FFFF;
+    --background-checked: linear-gradient(to right, #0062CC, #0083CB)!important;
+    --border-radius:10px;
+    --color: rgb(167, 166, 166);
+    --indicator-color: none;
+    text-transform: none;
+    padding: 0;
+    min-height: 35px;
+   
+  }
+
+    ion-card{
+    margin:0;
+    box-shadow: none;
+    h6{
+     color:black;
+     font-size:12px;
+     margin: 0.5em;
+     font-weight: 600;
+   }
+
+   img{
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:8px;
+   }
+
+   span{
+    margin: 0.5em;
+    font-size:12px;
+   }
+ }
+
+ .card_color{
+  border-radius: 8px;
+  border: 2px #0394DD solid;
+}
+
+.special_color{
+  border-radius: 8px;
+  border: 2px #f8b150 solid;
+}
+
+.bottom_elt{
+  background-color: #0394DD;
+  height:1.7em;
+  border-radius: 0px 0px 0px 0px;
+
+  h6{
+    padding-top:0.5em;
+    color:#fff;
+    font-size:12px;
+  }
+}
+
+.bottom_special{
+  background-color:#f8b150;
+  height:1.7em;
+  border-radius: 0px 0px 0px 0px;
+
+  h6{
+    padding-top:0.5em;
+    color:#fff;
+    font-size:12px;
+  }
+}
+
+.icon_color{
+  position:absolute;
+  z-index:2;
+  top: 0.0em;
+  left: 10em;
+  ion-icon{
+    margin-top:0.3em;
+   width:20px;
+   height:18px;
+   font-weight: 800 !important;
+  }
+}
+
+  .middle-button{
+   display:flex;
+   justify-content:center;
+   ion-button{
+    --border-radius:10px;
+    --background: #0394DD;
+    }
+  }
+
+  .seperator_first{
+    hr {
+      width: 100%;
+      background: #e2e2e2;
+      margin-top:0.5em;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .icon_color{
+    position:absolute;
+    z-index:2;
+    top: 0.0em;
+    left: 8.7em !important;
+  }
+}

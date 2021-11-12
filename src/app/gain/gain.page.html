@@ -1,0 +1,164 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab5']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Mes gains</h5>
+      <ion-button fill="clear">
+        <ion-icon name="notifications-outline" class="search"></ion-icon>
+      </ion-button>
+    </div>
+    <div>
+      <h2 class="price">25 000 <sup>fcfa</sup></h2>
+      <h6 class="sub_title">Solde total du compte</h6>
+    </div>
+    <ion-grid class="ion-padding">
+      <ion-row>
+        <ion-col size="4">
+          <ion-card>
+            <h6>Paiement attente</h6>
+            <h4>0 <sup>fcfa</sup></h4>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card>
+            <h6>Visites mystères</h6>
+            <h4>3 000 <sup>fcfa</sup></h4>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <ion-card>
+            <h6>Sondages</h6>
+            <h4>2 000 <sup>fcfa</sup></h4>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h5>Récentes transactions</h5>
+    <ion-segment (ionChange)="segmentChanged($event)" scrollable="true" class="segment" value="tous">
+      <ion-segment-button value="tous">Tous</ion-segment-button>
+      <ion-segment-button value="vm">Visites mystères</ion-segment-button>
+      <ion-segment-button value="sr">Sondages rénumérés</ion-segment-button>
+    </ion-segment>
+    <div *ngIf="selectedSegmentTous=='tous'">
+      <h6 class="title">Ajourd'hui</h6>
+      <div>
+        <div class="position">
+          <ion-icon name="reader-outline"></ion-icon>
+          <h3> Mission 1</h3>
+          <h5>1 000 <sup>fcfa</sup></h5>
+        </div>
+        <div class="sub_position">
+          <h6 class="sub">Mission de visite mystère</h6>
+          <h6 class="sub_hour">08/11/2021</h6>
+        </div>
+      </div>
+      <div>
+        <div class="position">
+          <ion-icon name="reader-outline"></ion-icon>
+          <h3> Mission 2</h3>
+          <h5>1 000 <sup>fcfa</sup></h5>
+        </div>
+        <div class="sub_position">
+          <h6 class="sub">Mission de sondage</h6>
+          <h6 class="sub_hour">08/11/2021</h6>
+        </div>
+      </div>
+      <h6 class="title">il y a 2 jours</h6>
+      <div>
+        <div class="position">
+          <ion-icon name="reader-outline"></ion-icon>
+          <h3> Mission 0</h3>
+          <h5>1 000 <sup>fcfa</sup></h5>
+        </div>
+        <div class="sub_position">
+          <h6 class="sub">Mission de visite mystère</h6>
+          <h6 class="sub_hour">08/11/2021</h6>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedSegmentTous !='tous'">  
+      <div *ngIf="selectedSegmentVisite=='vm'">
+        <h6 class="title">Ajourd'hui</h6>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 1</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de visite mystère</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 2</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de visite mystère</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 3</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de visite mystère</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="selectedSegmentSondage=='sr'">
+        <h6 class="title">Ajourd'hui</h6>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 1</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de sondage</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 2</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de sondage</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+        <div>
+          <div class="position">
+            <ion-icon name="reader-outline"></ion-icon>
+            <h3> Mission 3</h3>
+            <h5>1 000 <sup>fcfa</sup></h5>
+          </div>
+          <div class="sub_position">
+            <h6 class="sub">Mission de sondage</h6>
+            <h6 class="sub_hour">08/11/2021</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <ion-button>DEMANDER UN PAIEMENT</ion-button>
+    </div>
+  </div>
+</ion-content>

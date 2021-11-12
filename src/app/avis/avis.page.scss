@@ -32,6 +32,12 @@ ion-content{
     font-size: 14px;
   }
 
+  .count{
+    text-align: right;
+    margin-right: 1.5em;
+    color: grey;
+  }
+
   ion-item {
     --ion-item-background: transparent;
     --border-width: 0;
@@ -47,6 +53,7 @@ ion-content{
   .button{
     display:flex;
     justify-content:right;
+    margin-top:-0.5em;
     ion-button{
       --border-radius:10px;
       --background: #0394DD;

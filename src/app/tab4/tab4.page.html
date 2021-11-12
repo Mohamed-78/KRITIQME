@@ -1,0 +1,246 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab1']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Liste missions disponibles</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <ion-segment (ionChange)="segmentChanged($event)" scrollable="true" class="segment" value="tous">
+      <ion-segment-button value="tous">Tous</ion-segment-button>
+      <ion-segment-button value="vm">Visites mystères</ion-segment-button>
+      <ion-segment-button value="sr">Sondages rénumérés</ion-segment-button>
+    </ion-segment>
+    <div *ngIf="selectedSegmentTous=='tous'">
+      <ion-grid>
+        <ion-row>
+          <ion-col routerLink="/detail-mission">
+            <ion-card class="card_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="warning"></ion-icon>
+              </div>
+              <img src="../../assets/img/pro.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Visite mystère 1</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_elt">
+                <h6>Mission en cours</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="card_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="primary"></ion-icon>
+              </div>
+              <img src="../../assets/img/sgbci.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Visite mystère 2</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_elt">
+                <h6>Mission non débutée</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="special_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="primary"></ion-icon>
+              </div>
+              <img src="../../assets/img/orange_ci.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Visite mystère 3</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_special">
+                <h6>Mission non débuté</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="card_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="danger"></ion-icon>
+              </div>
+              <img src="../../assets/img/cie.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Visite mystère 4</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_elt">
+                <h6>Mission annulée</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngIf="selectedSegmentTous !='tous'">  
+      <div *ngIf="selectedSegmentVisite=='vm'">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="warning"></ion-icon>
+                </div>
+                <img src="../../assets/img/pro.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 1</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission en cours</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="primary"></ion-icon>
+                </div>
+                <img src="../../assets/img/sgbci.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 2</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission non débutée</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="warning"></ion-icon>
+                </div>
+                <img src="../../assets/img/cap_nord.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 3</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission en cours</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="primary"></ion-icon>
+                </div>
+                <img src="../../assets/img/jum.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 2</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission non débutée</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="warning"></ion-icon>
+                </div>
+                <img src="../../assets/img/bus.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 3</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission en cours</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+              <ion-card class="card_color">
+                <div class="icon_color">
+                  <ion-icon name="ellipse" color="primary"></ion-icon>
+                </div>
+                <img src="../../assets/img/air_ci.jpg">
+                <div class="seperator_first">
+                  <hr>
+                </div>
+                <h6>Visite mystère 4</h6>
+                <span>11/09/2021 - 09h00</span>
+                <div class="bottom_elt">
+                  <h6>Mission non débutée</h6>
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <div *ngIf="selectedSegmentSondage=='sr'">
+       <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="special_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="primary"></ion-icon>
+              </div>
+              <img src="../../assets/img/orange_ci.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Sondage 1</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_special">
+                <h6>Mission non débuté</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="special_color">
+              <div class="icon_color">
+                <ion-icon name="ellipse" color="primary"></ion-icon>
+              </div>
+              <img src="../../assets/img/jum.jpg">
+              <div class="seperator_first">
+                <hr>
+              </div>
+              <h6>Sondage 2</h6>
+              <span>11/09/2021 - 09h00</span>
+              <div class="bottom_special">
+                <h6>Mission non débuté</h6>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </div>
+    </div>
+  </div>
+</ion-content>

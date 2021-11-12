@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab4']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Mes tâches</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+
+    <div class="position">
+      <h6>Tâches</h6>
+      <h6>02/04</h6>
+    </div>
+
+    <h6>Quels moyens utilisez vous pour payer vos factures CIE?</h6>
+    <div class="sub_position">
+      <ion-checkbox></ion-checkbox>
+      <h6>A l'agence</h6>
+    </div>
+
+    <div class="sub_position">
+      <ion-checkbox></ion-checkbox>
+      <h6>Depuis mobile money</h6>
+    </div>
+
+    <div class="sub_position">
+      <ion-checkbox></ion-checkbox>
+      <h6>Virement bancaire ou chèque</h6>
+    </div>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close" routerLink="/tabs/tab5">ANNULER</ion-button>
+      <ion-button disabled="disabled" class="save">VALIDER</ion-button>
+    </div>
+
+  </div>
+</ion-content>

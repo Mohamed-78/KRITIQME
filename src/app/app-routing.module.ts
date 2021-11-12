@@ -32,6 +32,42 @@ const routes: Routes = [
   {
     path: 'avis',
     loadChildren: () => import('./avis/avis.module').then( m => m.AvisPageModule)
+  },
+  {
+    path: 'avis-recent',
+    loadChildren: () => import('./avis-recent/avis-recent.module').then( m => m.AvisRecentPageModule)
+  },
+  {
+    path: 'completer-profil',
+    loadChildren: () => import('./completer-profil/completer-profil.module').then( m => m.CompleterProfilPageModule)
+  },
+  {
+    path: 'gain',
+    loadChildren: () => import('./gain/gain.module').then( m => m.GainPageModule)
+  },
+  {
+    path: 'detail-mission',
+    loadChildren: () => import('./detail-mission/detail-mission.module').then( m => m.DetailMissionPageModule)
+  },
+  {
+    path: 'tache',
+    loadChildren: () => import('./tache/tache.module').then( m => m.TachePageModule)
+  },
+  {
+    path: 'demande-paiement',
+    loadChildren: () => import('./demande-paiement/demande-paiement.module').then( m => m.DemandePaiementPageModule)
+  },
+  {
+    path: 'statut-paiement',
+    loadChildren: () => import('./statut-paiement/statut-paiement.module').then( m => m.StatutPaiementPageModule)
+  },
+  {
+    path: 'historique-mission',
+    loadChildren: () => import('./historique-mission/historique-mission.module').then( m => m.HistoriqueMissionPageModule)
+  },
+  {
+    path: 'mission-accepte',
+    loadChildren: () => import('./mission-accepte/mission-accepte.module').then( m => m.MissionAcceptePageModule)
   }
 ];
 @NgModule({

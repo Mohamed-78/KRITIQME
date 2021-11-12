@@ -1,0 +1,141 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      --background: #0394DD;
+      height: 4.5em;
+      h5{
+        color: #FFFFFF;
+      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        color:white;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+  }
+
+}
+
+ion-content{
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .position_element{
+    display:flex;
+    justify-content:space-evently;
+
+    ion-icon{
+      font-size: 25px;
+    }
+
+    h5{
+      margin-top: 0.1em;
+    }
+  }
+
+  .position_element{
+    display:flex;
+    justify-content:space-evently;
+
+    ion-icon{
+      font-size: 22px;
+    }
+
+    h5{
+      margin-top: 0.1em;
+      font-size:16px;
+    }
+  }
+
+  .last_position{
+    margin-top:0.5em;
+    display:flex;
+    justify-content:space-evently;
+
+    ion-icon{
+      font-size: 22px;
+    }
+
+    h5{
+      margin-top: 0.1em;
+      font-size:16px;
+    }
+  }
+
+  p{
+    color:grey;
+    margin-top:-0.2em;
+  }
+
+  .down_position{
+    display:flex;
+    justify-content:space-between;
+    margin-top:-1em;
+
+    h5 ion-icon{
+      font-size:22px;
+      margin-bottom: -0.1em;
+    }
+
+    h5{
+      font-size:16px;
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1em;
+    margin-bottom:1em;
+    ion-button {
+      height: 50px;
+      width: 375px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: none;
+      --background: #0062cc;
+      --border-radius: 8px;
+      color: #fff;
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .down_position > h5 {
+    font-size: 14px !important;
+  }
+
+  .position_element > h5 {
+    font-size: 14px !important;
+  }
+
+  .last_position > h5 {
+    font-size: 14px !important;
+  }
+
+  .bottom-section > ion-button {
+     height: 50px;
+      width: 320px !important;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: none;
+      --background: #0062cc;
+      --border-radius: 8px;
+      color: #fff;
+  }
+}

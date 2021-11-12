@@ -1,0 +1,93 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" routerLink="/tabs/tab5">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Completer mon profil</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <h3>Mon profil</h3>
+    <p>Compléter votre profil pour participer aux missions et gagner des gains</p>
+    <div class="update">
+     <img src="../../assets/img/profil.jpg">
+     <ion-progress-bar color="primary" value="0.2" class="progress">
+     </ion-progress-bar>&nbsp;20%
+   </div>
+   <div class="sub_element">
+     <h5 class="colorBlue">CHANGER</h5>
+     <h5 class="colorBlack">SUPPRIMER</h5>
+   </div>
+ </div>
+ <h6>Nom du sondage</h6>
+ <ion-item>
+   <ion-input type="text"></ion-input>
+ </ion-item>
+
+ <h6>Date de naissance</h6>
+ <ion-item>
+   <ion-input type="date"></ion-input>
+ </ion-item>
+
+ <h6>Type de pièce</h6>
+ <ion-item id="select">
+   <ion-select value="PI" okText="Choisir" cancelText="Fermer" mode="ios" >
+    <ion-select-option value="PI">Pièce d'identité</ion-select-option>
+    <ion-select-option value="PA">Passeport</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<h6>Numéro de la pièce</h6>
+<ion-item>
+ <ion-input></ion-input>
+</ion-item>
+
+<h6>Photo pièce d'identité</h6>
+<ion-item>
+ <ion-input type="file"></ion-input>
+</ion-item>
+
+<h6>Situation matrimonial</h6>
+<ion-item id="select">
+ <ion-select value="M" okText="Choisir" cancelText="Fermer" mode="ios" >
+  <ion-select-option value="M">Marié(e)</ion-select-option>
+  <ion-select-option value="C">Célibataire</ion-select-option>
+  <ion-select-option value="V">Veuf(e)</ion-select-option>
+</ion-select>
+</ion-item>
+
+<h6>Sexe</h6>
+<ion-item id="select">
+ <ion-select value="M" okText="Choisir" cancelText="Fermer" mode="ios" >
+  <ion-select-option value="M">Masculin</ion-select-option>
+  <ion-select-option value="F">Feminin</ion-select-option>
+  <ion-select-option value="A">Autre</ion-select-option>
+</ion-select>
+</ion-item>
+
+<h6>Catégorie socio-professionnelle</h6>
+<ion-item>
+ <ion-input type="text"></ion-input>
+</ion-item>
+
+<h6>Commune</h6>
+<ion-item>
+ <ion-input type="photo"></ion-input>
+</ion-item>
+
+<h6>Pays</h6>
+<ion-item>
+ <ion-input type="photo"></ion-input>
+</ion-item>
+
+<div class="bottom-section">
+  <ion-button routerLink="/tabs/tab5">ENREGISTRER</ion-button>
+</div>
+
+</ion-content>

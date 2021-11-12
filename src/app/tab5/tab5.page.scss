@@ -1,0 +1,136 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+  --background: linear-gradient(to bottom, #0394dd, #0062cc);
+    h5{
+      color: #FFFFFF;
+    }
+
+    img{
+      width: 90px;
+      border-radius: 50px;
+      border: 2px solid #FFFFFF;
+    }
+
+    .title-position{
+      margin-top: 1.5em;
+      display:flex;
+      justify-content:space-between;
+    }
+
+    ion-icon{
+      color:white;
+    }
+  }
+
+  .name{
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 15%;
+  }
+
+  .localisation{
+    color: #FFFFFF;
+    font-size: 15.5px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .stat_position{
+    display:flex;
+    justify-content:center;
+    color:#FFFFFF;
+    margin-top:-1em;
+    line-height:10%;
+    h6{
+      font-size:14px;
+      font-weight:300;
+    }
+  }
+
+  .stat{
+    color:#FFFFFF;
+  }
+
+/*   .border{
+    border-right: 1.5px solid #FFFFFF;
+    border-bottom: 1.5px solid #FFFFFF;
+    border-left : 1.5px solid #FFFFFF;
+    margin:3.5em;
+  } */
+
+  .number_position{
+    display:flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+    font-weight:900;
+    margin-top:-1em;
+
+    .n1{
+      margin-left: 3.5em;
+    }
+
+    .n2{
+      margin-right: 2.5em;
+    }
+
+    .n3{
+      margin-right:4.5em;
+    }
+  }
+
+}
+
+ion-content{
+  .menu_position{
+    display:flex;
+    justify-content:space-between;
+
+    h5 ion-icon{
+      color:#0394DD;
+      font-size:22px;
+      margin-bottom: -0.1em;
+    }
+
+    h5{
+      color:grey;
+      font-size:16px;
+    }
+
+    .chrv{
+      color:#7c7c7c;
+      margin-top: 1em;
+      margin-right:0.5em;
+      font-size: 22px;
+    }
+
+    span{
+      color: #0394DD;
+      margin-left:3.5em;
+      margin-top: 1.5em;
+      font-weight: bold;
+    }
+  }
+
+  .seperator_first{
+    hr {
+      width: 100%;
+      background: #e2e2e2;
+      margin-top:-0.8em;
+    }
+  }
+
+  .mission{
+    color: #0394DD;
+    margin-left:0.5em;
+  }
+
+  .chip1{
+    --background: #0394DD;
+    --border-radius:50px;
+  }
+
+}

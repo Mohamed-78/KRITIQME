@@ -11,8 +11,5 @@ export class TabsPage {
 
   constructor(private navctrl: NavController) {}
 
-  redirectTo_login(){
-    this.navctrl.navigateForward("/login");
-  }
 
 }

@@ -1,12 +1,14 @@
 <ion-content>
   <div class="bg-img">
     <div class="ion-padding">
-      <div class="img-header">
+     <div class="header_element">
+      <h6>Merci d'avoir voté pour</h6>
        <ion-button fill="clear" class="close_btn_position" (click)="closeModal()">
         <ion-icon color="light"  name="close-outline">
         </ion-icon>
       </ion-button>
-      <h6>Merci d'avoir voté pour</h6>
+    </div>
+    <div class="img-header">
       <img src="../../assets/img/a9.jpg">
     </div>
     <div class="name">
@@ -17,10 +19,10 @@
   <div class="middle-button">
     <ion-button mode="ios" fill="clear" color="light" (click)="redirectTo_avis()">
      Oui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-    </ion-button>
-    <ion-button  mode="ios" fill="clear" color="light" (click)="redirectBack()">
-      Non
-    </ion-button>
-  </div>
+   </ion-button>
+   <ion-button  mode="ios" fill="clear" color="light" (click)="redirectBack()">
+    Non
+  </ion-button>
+</div>
 </div>
 </ion-content>

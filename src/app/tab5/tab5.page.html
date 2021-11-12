@@ -1,0 +1,138 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab1']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <img src="../../assets/img/profil.jpg">
+      <ion-button fill="clear" routerLink="/reglage">
+       <ion-icon name="settings-outline"></ion-icon>
+     </ion-button>
+   </div>
+   <h6 class="name">Jeanne Doe</h6>
+   <h6 class="localisation">Abidjan, Koumassi soleil</h6>
+   <h6 class="stat" align="center">Statistiques</h6>
+   <div class="stat_position">
+    <h6>Vote total&nbsp;|&nbsp;</h6>
+    <h6>Sondages&nbsp;|&nbsp;</h6>
+    <h6>Visites mystères</h6>
+  </div>
+  <div class="number_position">
+    <h6 class="n1">1200</h6>
+    <h6 class="n2">100</h6>
+    <h6 class="n3">500</h6>
+  </div>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <div class="menu_position" routerLink="/completer-profil">
+      <h5>
+        <ion-icon name="person-outline"></ion-icon> Compléter mon profil
+      </h5>
+      <span>78%</span>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+    <div class="menu_position">
+      <h5>
+        <ion-icon name="ribbon-outline" color="warning"></ion-icon> Consulter le Top 10 du mois
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/tabs/tab3">
+      <h5>
+       <ion-icon name="stats-chart-outline" color="danger"></ion-icon> Voter
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+  </div>
+  <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Mes missions</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position" routerLink="/tabs/tab4">
+      <h5>
+        <ion-icon name="document-text-outline"></ion-icon> Participer à une mission rénumérée
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv" routerLink="/completer-profil"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/mission-accepte">
+      <h5>
+       <ion-icon name="document-text-outline" color="danger"></ion-icon> Mes missions
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/historique-mission">
+      <h5>
+       <ion-icon name="document-text-outline" color="danger"></ion-icon> Historique de missions
+     </h5>
+     <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+   </div>
+  </div>
+  <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Mes paiements</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position" routerLink="/demande-paiement">
+      <h5>
+        <ion-icon name="document-text-outline" color="danger"></ion-icon>Demande de paiement
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="statut-paiement">
+      <h5>
+       <ion-icon name="document-text-outline" color="danger"></ion-icon> Statut de paiement
+      </h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/gain">
+      <h5>
+       <ion-icon name="document-text-outline" color="danger"></ion-icon> Gains
+     </h5>
+     <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+   </div>
+  </div>
+   <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Aide et contact</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position">
+      <h5>
+        <ion-icon name="share-social-outline" color="meduim"></ion-icon> Partager cette application
+      </h5>
+    </div>
+    <div class="menu_position">
+      <h5>
+       <ion-icon name="chatbubble-outline" color="meduim"></ion-icon> Envoyer un message au support
+      </h5>
+    </div>
+    <div class="menu_position">
+      <h5>
+       <ion-icon name="document-text-outline" color="meduim"></ion-icon> Conditions générales d'utilisation
+     </h5>
+   </div>
+   <div class="menu_position">
+      <h5>
+       <ion-icon name="document-text-outline" color="meduim"></ion-icon> Règles de confidentialité
+     </h5>
+   </div>
+   <div class="menu_position">
+      <h5>
+       <ion-icon name="alert-circle-outline" color="meduim"></ion-icon> A propos
+     </h5>
+   </div>
+  </div>
+  <div class="seperator_first">
+    <hr size="2px">
+  </div>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position">
+      <h5>
+        <ion-icon name="log-out-outline" color="meduim" class="iPosition"></ion-icon> Déconnexion
+      </h5>
+    </div>
+  </div>
+</ion-content>

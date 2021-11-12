@@ -10,15 +10,14 @@ ion-header{
     height: 80px;
   }
   .position{
-      display: flex;
-      justify-content:center;
       position:absolute;
       z-index:2;
       top: 1em;
-      right: 4.8em;
-
+      margin-left: 7.7em;
+      margin-right: 7.7em;
       img{
-        width: 70%;
+        width: 13em;
+        height:11em;
         border-radius: 10px;
         border: 3px solid white;
       }

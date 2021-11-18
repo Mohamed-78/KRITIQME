@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TachePage implements OnInit {
 
-  constructor() { }
+  checked: boolean = false;
+  changeChecked:boolean = false;
+
+  public toggled: boolean = false;
+
+  constructor() { 
+    this.toggled = false;
+  }
 
   ngOnInit() {
+  }
+
+  public toggle(): void {
+    this.toggled = !this.toggled;
   }
 
 }

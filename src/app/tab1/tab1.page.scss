@@ -25,6 +25,11 @@ ion-toolbar{
 			--background: #0394DD;
 		}
 	}
+
+  ion-searchbar{
+    //--background:white;
+    --placeholder-color:black;
+  }
 }
 
 ion-content{

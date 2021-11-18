@@ -3,7 +3,6 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { VoterComponent } from './voter/voter.component';
 import { DonnerAvisComponent } from  './donner-avis/donner-avis.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -68,6 +67,10 @@ const routes: Routes = [
   {
     path: 'mission-accepte',
     loadChildren: () => import('./mission-accepte/mission-accepte.module').then( m => m.MissionAcceptePageModule)
+  },
+  {
+    path: 'msg-validation',
+    loadChildren: () => import('./msg-validation/msg-validation.module').then( m => m.MsgValidationPageModule)
   }
 ];
 @NgModule({

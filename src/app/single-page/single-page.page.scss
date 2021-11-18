@@ -9,7 +9,7 @@ ion-header{
     z-index:1;
     height: 80px;
   }
-  .position{
+  .header{
       position:absolute;
       z-index:2;
       top: 1em;
@@ -21,7 +21,7 @@ ion-header{
         border-radius: 10px;
         border: 3px solid white;
       }
-    }
+  }
 }
 
 ion-content{
@@ -49,5 +49,192 @@ ion-content{
     img{
       width:20px;
     }
+  }
+
+  .chart-container {
+    position: relative;
+    height: 10vh;
+    width: 35vw;
+
+    h5{
+      margin-top:-3em;
+      margin-left:1em;
+      font-size:30px;
+      font-weight:bold;
+      color:grey;
+    }
+  }
+
+  .left_element{
+    margin-top:-2.5em;
+    margin-right:2em;
+
+    .first_title{
+      text-align: right;
+      margin-right:2.2em;
+
+      ion-icon{
+        color:#24e081;
+      }
+    }
+
+    .second_title{
+      text-align: right;
+
+      ion-icon{
+        color:red;
+      }
+    }
+  }
+
+  .top{
+    margin-top:-1.5em;
+  }
+
+  .marge{
+    margin-top:2em !important;
+
+    ion-icon{
+      font-size:30px;
+
+    }
+  }
+
+  .middle-button{
+    margin-top:-0.8em;
+    margin-bottom: 1em;
+    display:flex;
+    justify-content:center;
+    .btn_red{
+      --border-radius:10px;
+      --background: #dd0000;
+      min-width: 148px;
+      height: 45px;
+    }
+
+    .btn_success{
+      --border-radius:10px;
+      --background: #24e081;
+      min-width: 148px;
+      height: 45px;
+    }
+
+    img{
+      width:35px;
+    }
+  }
+
+  .info{
+    margin-top:-1em;
+  }
+
+  .avis_position{
+    display:flex;
+    justify-content:space-between;
+
+    h6:first-child{
+      font-size:20px !important;
+    }
+
+    h6:last-child{
+      text-decoration: underline;
+      color: #0394DD;
+    }
+  }
+
+  .commentaire{
+    margin-top:1em;
+    display:flex;
+    justify-content:space-between;
+    img{
+      border-radius:50px;
+      width:30px;
+      height:30px;
+    }
+
+    p{
+      margin-top:0.3em;
+      margin-left:0.5em;
+    }
+  }
+
+  .submit_avis{
+    display:flex;
+    justify-content:space-between;
+
+    img{
+      border-radius:50px;
+      width:30px;
+      height:30px;
+    }
+
+    input {
+      min-width: 305px;
+      height: 38px;
+      border: 1px solid #e2e2e2;
+      font-size: 15px;
+      border-radius:20px;
+      color: #000;
+      padding: 1em;
+    }
+
+    input:focus{
+      outline: 1px solid #0394DD;
+    }
+
+    ion-icon{
+     color: #0394DD;
+     font-size:25px;
+     margin-top:0.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .chart-container {
+    position: relative;
+    height: 10vh;
+    width: 38vw !important;
+  }
+
+  .left_element{
+    margin-top:-2.5em;
+    margin-right:1em !important;
+
+    .first_title{
+      text-align: right;
+      margin-right:2.1em !important;
+      font-size:15px;
+    }
+
+    .second_title{
+      margin-left:5em !important;
+      font-size:15px;
+    }
+  }
+
+  .header{
+    position:absolute;
+    z-index:2;
+    top: 1em;
+    img{
+      min-width: 10em !important;
+      height:10em !important;
+      border-radius: 10px;
+      border: 3px solid white;
+      margin-left:-1.3em;
+    }
+  }
+
+  .position{
+    margin-top: 6.5em !important;
+  }
+
+  .info{
+    margin-top:-1em !important;
+  }
+
+  .submit_avis > input {
+    min-width: 260px !important;
   }
 }

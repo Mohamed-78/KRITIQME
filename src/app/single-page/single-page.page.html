@@ -4,7 +4,7 @@
     <ion-icon name="arrow-back" color="light"></ion-icon>
   </ion-button>
   </ion-toolbar>
-  <div class="position">
+  <div class="header">
      <img src="../../assets/img/arafat.jpg">
   </div>
 </ion-header>
@@ -15,7 +15,7 @@
       <span class="alert"><u>Revendiguer ce profil</u></span>
     </h6>
   </div>
-  <div class="ion-padding">
+  <div class="ion-padding info">
     <div class="space-word">
       <ion-icon name="briefcase-outline"></ion-icon>&nbsp;Artiste chanteur, ivoirien<br>
       <ion-icon name="location-outline"></ion-icon>&nbsp;Côte d'Ivoire, Abidjan&nbsp;<img src="../../assets/img/drapeau.png" class="img"><br>
@@ -23,6 +23,51 @@
       <ion-icon name="pricetag-outline"></ion-icon>&nbsp;Mondaine: (Artiste ivoirien)<br>
       <ion-icon name="trending-up" color="success" class="icon-tUp"></ion-icon>
       N°1 / 500 au classement général
+    </div>
+  </div>
+  <div class="ion-padding top">
+    <div class="chart-container">
+      <canvas #doughnutCanvas></canvas>
+      <h5>1/500</h5>
+    </div>
+    <div class="left_element">
+      <h6 class="first_title"><ion-icon name="square"></ion-icon>
+        &nbsp;&nbsp;
+        Favorable <b>95%</b>
+      </h6>
+      <h6 class="second_title"><ion-icon name="square"></ion-icon>
+        &nbsp;&nbsp;
+        Non favorable <b>05%</b></h6>
+    </div>
+  </div>
+  <div class="marge">
+    <h5 align="center"><b>Voter pour cette personnalité</b><br>
+      <ion-icon name="arrow-down-outline"></ion-icon>
+    </h5>
+    <div class="middle-button">
+      <ion-button class="btn_red" size="small" mode="ios">
+        <img src="../../assets/img/dislike.png">
+      </ion-button>&nbsp;&nbsp;
+      <ion-button class="btn_success" size="small" mode="ios">
+        <img src="../../assets/img/like.png">
+      </ion-button>
+    </div>
+  </div>
+  <div class="ion-padding">
+    <div class="avis_position ">
+      <h6>1M avis</h6>
+      <h6 routerLink="/avis-recent">Voir plus d'avis</h6>
+    </div>
+    <div class="commentaire">
+      <img src="../../assets/img/profil.jpg">
+      <p>
+        Enim ullamco in veniam consequat commodo ex dolore ea ad cillum excepteur laboris incididunt dolore amet id minim reprehenderit eiusmod fugiat.
+      </p>
+    </div>
+    <div class="submit_avis">
+      <img src="../../assets/img/profil.jpg">
+      <input type="text" placeholder="Ecrivez votre commentaire ici">
+      <ion-icon name="send"></ion-icon>
     </div>
   </div>
 </ion-content>

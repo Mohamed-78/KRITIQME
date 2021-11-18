@@ -14,30 +14,72 @@
 <ion-content>
   <div class="ion-padding">
 
-    <div class="position">
-      <h6>Tâches</h6>
-      <h6>02/04</h6>
+    <div *ngIf="!toggled">
+      <div class="position">
+        <h6>Tâches</h6>
+        <h6>01/02</h6>
+      </div>
+
+      <h6>Que pensez-vous de la CIE en terme de relation clientèle?</h6>
+      <div class="sub_position">
+        <ion-checkbox [(ngModel)]="checked"></ion-checkbox>
+        <h6>Très bien</h6>
+      </div>
+
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Bien</h6>
+      </div>
+
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Pas mal</h6>
+      </div>
+
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Mal</h6>
+      </div>
+
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Très mal</h6>
+      </div>
+
+      <div class="bottom-section">
+        <ion-button fill="clear" class="close" routerLink="/tabs/tab4">ANNULER</ion-button>
+        <ion-button [disabled]="!checked" class="save" (click)="toggle()">VALIDER</ion-button>
+      </div>
     </div>
 
-    <h6>Quels moyens utilisez vous pour payer vos factures CIE?</h6>
-    <div class="sub_position">
-      <ion-checkbox></ion-checkbox>
-      <h6>A l'agence</h6>
-    </div>
+    <div *ngIf="toggled">
+      <div class="position">
+        <h6>Tâches</h6>
+        <h6>02/02</h6>
+      </div>
 
-    <div class="sub_position">
-      <ion-checkbox></ion-checkbox>
-      <h6>Depuis mobile money</h6>
-    </div>
+      <h6>Quels moyens utilisez vous pour payer vos Factures CIE?</h6>
+      <div class="sub_position">
+        <ion-checkbox [(ngModel)]="changeChecked"></ion-checkbox>
+        <h6>A l'agence</h6>
+      </div>
 
-    <div class="sub_position">
-      <ion-checkbox></ion-checkbox>
-      <h6>Virement bancaire ou chèque</h6>
-    </div>
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Depuis mobile money</h6>
+      </div>
 
-    <div class="bottom-section">
-      <ion-button fill="clear" class="close" routerLink="/tabs/tab5">ANNULER</ion-button>
-      <ion-button disabled="disabled" class="save">VALIDER</ion-button>
+      <div class="sub_position">
+        <ion-checkbox></ion-checkbox>
+        <h6>Virement bancaire ou chèque</h6>
+      </div>
+
+      <div class="bottom-section">
+        <ion-button fill="clear" class="close" routerLink="/tabs/tab4">ANNULER</ion-button>
+        <ion-button [disabled]="!changeChecked" class="save" routerLink="/msg-validation">
+          VALIDER
+        </ion-button>
+      </div>
     </div>
 
   </div>

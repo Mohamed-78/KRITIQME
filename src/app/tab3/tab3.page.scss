@@ -27,6 +27,8 @@ ion-header{
     --border-radius:8px;
     --box-shadow: none;
     margin-top: 0.5em;
+    --background:white;
+    --placeholder-color:black;
   }
 }
 
@@ -80,4 +82,15 @@ ion-content{
     min-height: 30px;
    
   }
+}
+
+@media screen and (max-width: 375px) {
+ span{
+   font-size:11px !important;
+ }
+
+ h6 > ion-button{
+  margin-top: -1.3em !important;
+ }
+
 }

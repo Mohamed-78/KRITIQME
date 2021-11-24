@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/paiement-e2']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Effectuer un paiement</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="space">
+    <h6>Numéro de téléphone</h6>
+    <ion-item><ion-input type="text"></ion-input></ion-item>
+  </div>
+
+  <p class="ion-padding"><sup>*</sup>&nbsp;Vous aller recevoir un code de validation par email après confirmation
+  de votre paiement par kritiqme</p>
+
+  <div class="bottom-section ion-padding">
+    <ion-button fill="clear" class="close" [routerLink]="['/tabs/tab6']">ANNULER</ion-button>
+    <ion-button class="save" [routerLink]="['/paiement-e4']">VALIDER</ion-button>
+  </div>
+
+</ion-content>

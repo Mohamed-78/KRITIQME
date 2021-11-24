@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/cree-activite']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Créer une visite mystère</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding title">
+    <h5>Fiche de mission</h5>
+    <span>01 infos mission</span>
+
+    <div class="input">
+      <h6>Nom de la mission</h6>
+      <input type="" name="">
+    </div>
+
+    <div class="input">
+      <h6>Description</h6>
+      <textarea cols="40" rows="8"></textarea>
+    </div>
+
+    <div class="input">
+      <h6>Date début</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Date de fin</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Heure de début</h6>
+      <input type="time" name="">
+    </div>
+
+    <div class="input">
+      <h6>Heure de fin</h6>
+      <input type="time" name="">
+    </div>
+
+    <div class="input">
+      <h6>Lieu</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="input">
+      <h6>Gain de participation</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="bottom-section ion-padding">
+      <ion-button fill="clear" class="close" [routerLink]="['/creer-activite']">PRECEDENT</ion-button>
+      <ion-button class="save" [routerLink]="['/creervme2']">SUIVANT</ion-button>
+    </div>
+
+  </div>
+</ion-content>

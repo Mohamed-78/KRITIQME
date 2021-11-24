@@ -1,0 +1,117 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab1']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <img src="../../assets/img/pro.jpg">
+      <ion-button fill="clear" routerLink="/reglage">
+       <ion-icon name="settings-outline"></ion-icon>
+     </ion-button>
+   </div>
+   <h6 class="name">Prosuma</h6>
+   <h6 class="localisation">Abidjan, Marcory Zone 3</h6>
+   <h6 class="stat" align="center">Statistiques</h6>
+   <div class="cardre">
+     <div class="stat_position">
+      <h6>Rapports&nbsp;|&nbsp;</h6>
+      <h6>Sondages&nbsp;|&nbsp;</h6>
+      <h6>Visites mystères</h6>
+    </div>
+    <div class="number_position">
+      <h6 class="n1">1200</h6>
+      <h6 class="n2">100</h6>
+      <h6 class="n3">500</h6>
+    </div>
+  </div>
+</ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <div class="menu">
+      <ion-icon name="ribbon-outline" color="warning"></ion-icon> 
+      <h5 class="t2">Consulter le Top 10 du mois</h5>
+      <ion-icon name="chevron-forward-outline" class="chrv"></ion-icon>
+    </div>
+  </div>
+  <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Mes activités</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position" [routerLink]="['/liste-activite']">
+      <div class="c1"><ion-icon name="document-text-outline" color="light"></ion-icon></div>
+      <h5 class="list_activity">Liste de mes activités</h5>
+      <ion-icon name="chevron-forward-outline" class="chrevron" [routerLink]="['/liste-activite']"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/creer-activite">
+      <div class="c3">
+        <ion-icon name="document-text-outline" color="light"></ion-icon> 
+      </div>
+      <h5 class="mission_title">Créer une activité</h5>
+      <ion-icon name="chevron-forward-outline" class="chrevron"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/historique-activite">
+      <div class="c3">  
+       <ion-icon name="document-text-outline" color="light"></ion-icon> 
+      </div>
+      <h5 class="history_title">Historique des activités</h5>
+     <ion-icon name="chevron-forward-outline" class="chrevron"></ion-icon>
+   </div>
+  </div>
+  <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Mes paiements</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_position" routerLink="/effectuer-paiement">
+      <div class="c1">
+        <ion-icon name="card-outline" color="light" style="margin-left:0.1em;"></ion-icon>
+      </div>
+      <h5 class="demande_title">Effectuer un paiement</h5>
+      <ion-icon name="chevron-forward-outline" class="chrevron"></ion-icon>
+    </div>
+    <div class="menu_position" routerLink="/historique-paiement">
+      <div class="c3">
+        <ion-icon name="card-outline" color="light" style="margin-left:0.1em;"></ion-icon> 
+      </div>
+      <h5 class="statut_title">Historique de paiement</h5>
+      <ion-icon name="chevron-forward-outline" class="chrevron"></ion-icon>
+    </div>
+  </div>
+   <div class="seperator_first">
+    <hr>
+  </div>
+  <h6 class="mission">Aide et contact</h6>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_positions">
+      <ion-icon name="share-social-outline"></ion-icon>&nbsp;&nbsp; 
+      <h5>Partager cette application</h5>
+    </div>
+    <div class="menu_positions">
+      <ion-icon name="chatbubble-outline"></ion-icon>&nbsp;&nbsp; 
+      <h5>Envoyer un message au support</h5>
+    </div>
+    <div class="menu_positions">
+      <ion-icon name="document-text-outline"></ion-icon>&nbsp;&nbsp; 
+      <h5>Conditions générales d'utilisation</h5>
+   </div>
+   <div class="menu_positions">
+      <ion-icon name="document-text-outline"></ion-icon>&nbsp;&nbsp;  
+      <h5>Règles de confidentialité</h5>
+   </div>
+   <div class="menu_positions">
+      <ion-icon name="alert-circle-outline"></ion-icon>&nbsp;&nbsp; 
+      <h5>A propos</h5>
+   </div>
+  </div>
+  <div class="seperator_first">
+    <hr size="2px">
+  </div>
+  <div class="ion-padding" style="margin-top:-1.5em;">
+    <div class="menu_positions">
+      <ion-icon name="log-out-outline" class="iPosition"></ion-icon>&nbsp;&nbsp; 
+      <h5>Déconnexion</h5>
+    </div>
+  </div>
+</ion-content>

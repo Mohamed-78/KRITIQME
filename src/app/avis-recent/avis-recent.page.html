@@ -1,9 +1,44 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>avisRecent</ion-title>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/single-page']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Avis récent</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-
+  <div class="img-position">
+    <img src="../../assets/img/arafat.jpg">
+  </div>
+  <h6 align="center">Dj Arafat</h6>
+  <div class="ion-padding">
+    <div class="commentaire">
+      <img src="../../assets/img/profil.jpg">
+      <p>
+        Lorem anim veniam eiusmod aliquip sed eu elit quis consequat laborum eiusmod proident ex sit magna nulla adipisicing tempor do in aute dolore
+      </p>
+    </div>
+    <div class="commentaire">
+      <img src="../../assets/img/profil.jpg">
+      <p>
+        Lorem anim veniam eiusmod aliquip sed eu elit quis consequat laborum eiusmod proident ex sit magna
+      </p>
+    </div>
+    <div class="commentaire">
+      <img src="../../assets/img/profil.jpg">
+      <p>
+        Lorem ullamco in veniam consequat commodo ex dolore ea ad cillum excepteur labori
+      </p>
+    </div>   
+    <div class="submit_avis">
+      <img src="../../assets/img/profil.png">
+      <input type="text" placeholder="Ecrivez votre commentaire ici">
+      <ion-icon name="send"></ion-icon>
+    </div>
+  </div>
 </ion-content>

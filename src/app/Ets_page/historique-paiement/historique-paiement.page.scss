@@ -1,0 +1,99 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      --background: #0394DD;
+      height: 4.5em;
+      h5{
+        color: #FFFFFF;
+      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        color:white;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+  }
+
+}
+
+ion-content{
+  .position{
+    display:flex;
+    justify-content:space-between;
+
+    ion-icon{
+      font-size: 35px;
+      margin-top: 0.2em;
+    }
+    .title{
+      margin-left: -2.5em;
+      font-weight: 600;
+    }
+
+    .price{
+      font-weight: 600;
+      color:#0394DD;
+    }
+  }
+
+  .sub_position{
+    display:flex;
+    justify-content:space-between;
+
+    ion-icon{
+      font-size:20px;
+    }
+
+    span{
+      color:grey;
+      margin-left:2.9em;
+      margin-top:-0.2em;
+    }
+  }
+
+  span{
+    display:flex;
+    margin-left:2.9em;
+    color:#f8b150;
+    font-size:14px;
+  }
+
+  .seperator_first{
+    hr {
+      width: 100%;
+      background: #e2e2e2;
+      margin-top:-0.7em;
+    }
+  }
+
+  .color{
+    color:#00F365;
+  }
+
+  .icon_color{
+    color:#8a25fb;
+  }
+
+}
+
+@media screen and (min-width: 412px) {
+
+  .title{
+    margin-left: -6em !important;
+  }
+
+  .btn{
+    width: 380px !important;
+  }
+
+}

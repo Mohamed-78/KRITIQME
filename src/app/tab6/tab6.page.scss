@@ -1,0 +1,286 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+  /* --background: linear-gradient(to bottom, #0394dd, #0062cc); */
+    --background:  #0394DD; 
+    h5{
+      color: #FFFFFF;
+    }
+
+    img{
+      width: 90px;
+      border-radius: 50px;
+      border: 2px solid #d5d5d5;
+    }
+
+    .title-position{
+      margin-top: 1.5em;
+      display:flex;
+      justify-content:space-between;
+    }
+
+    ion-icon{
+      color:white;
+    }
+  }
+
+  .name{
+    color:#FFFFFF;
+    text-align: center;
+    line-height: 15%;
+  }
+
+  .localisation{
+    color: #FFFFFF;
+    font-size: 15.5px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .stat_position{
+    display:flex;
+    justify-content:center;
+    color:#FFFFFF;
+    margin-top:-1em;
+    line-height:10%;
+    h6{
+      font-size:15px;
+      font-weight:300;
+    }
+  }
+
+  .stat{
+    color:#FFFFFF;
+    position:relative;
+    top:10px;
+    padding:5px;
+    background:#0394DD; 
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .cardre{
+    margin-top:-0.5em !important;
+    border: 1px solid white;
+    margin:2em;
+    padding-top: 1.5em;
+  }
+
+  .number_position{
+    display:flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+    font-weight:900;
+    margin-top:-1em;
+
+    .n1{
+      margin-left: 1.5em;
+    }
+
+    .n2{
+      margin-right: 3em;
+    }
+
+    .n3{
+      margin-right:4.5em;
+    }
+  }
+
+}
+
+ion-content{
+
+  .cplt{
+    margin-top:2em;
+  }
+
+  .menu{
+
+    display:flex;
+    justify-content:space-between;
+
+    h5{
+      color:grey;
+      font-size:16px;
+      margin-top:1.5em;
+    }
+
+    .t2{
+      margin-left:-5em;
+    }
+
+    ion-icon{
+      font-size:23px;
+      margin-top:0.8em;
+      color:grey;
+    }
+
+    span{
+      color: #0394DD;
+      margin-left:3.5em;
+      margin-top: 1.5em;
+      font-weight: bold;
+    }
+
+    .chrv{
+      color:#7c7c7c;
+      margin-top: 1em;
+      margin-right:0.5em;
+      font-size: 22px;
+    }
+
+  }
+
+  .menu_positions{
+
+    display:flex;
+    justify-content:space-evently;
+
+    h5{
+      color:grey;
+      font-size:16px;
+    }
+
+    ion-icon{
+      font-size:23px;
+      margin-top:0.6em;
+      color:grey;
+    }
+
+  }
+  .menu_position{
+    display:flex;
+    justify-content:space-between;
+
+    .mission_title{
+      margin-left: -9.5em;
+    }
+
+    .list_activity{
+      margin-left: -7.5em;
+    }
+
+    .history_title{
+      margin-left: -6.7em;
+    }
+
+    .demande_title{
+      margin-left: -7em;
+    }
+
+    .statut_title{
+      margin-left: -6.5em;
+    }
+
+    ion-icon{
+      font-size:20.5px;
+      margin-top: 0.1em;
+      margin-left:0.2em;
+      margin-right:0.1em;
+      margin-bottom: 0.2em;
+    }
+
+    h5{
+      color:grey;
+      font-size:16px;
+    }
+
+    .chrv{
+      color:#7c7c7c;
+      margin-top: 1em;
+      margin-right:0.5em;
+      font-size: 22px;
+    }
+
+    .chrevron{
+      color:#7c7c7c;
+      margin-top: 0.6em;
+      margin-right:0.5em;
+      font-size: 22px;
+    }
+
+    span{
+      color: #0394DD;
+      margin-left:3.5em;
+      margin-top: 1.5em;
+      font-weight: bold;
+    }
+
+    .c1{
+      background: #0394DD;
+      width:1.7em;
+      height:1.7em;
+      border-radius: 50px;
+      margin-top:0.5em;
+    }
+
+    .c2{
+      background:#0062cc;
+      width:1.7em;
+      height:1.7em;
+      border-radius: 50px;
+      margin-top:0.5em;
+    }
+
+    .c3{
+      background:#28e183;
+      width:1.7em;
+      height:1.7em;
+      border-radius: 50px;
+      margin-top:0.5em;
+    }
+  }
+
+  .seperator_first{
+    hr {
+      width: 100%;
+      background: #e2e2e2;
+      margin-top:-0.8em;
+    }
+  }
+
+  .mission{
+    color: #0394DD;
+    margin-left:0.5em;
+  }
+
+  .chip1{
+    --background: #0394DD;
+    --border-radius:50px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  .t1{
+      margin-left:0.7em !important;
+    }
+
+    h5{
+      color:grey;
+      font-size:14px !important;
+    }
+
+    .t1{
+      margin-top:1.8em !important;
+      margin-left:-0.3em !important;
+    }
+
+    .t2{
+      margin-top:1.8em !important;
+    }
+
+    .t3{
+      margin-top:1.7em !important;
+    }
+
+  .cardre{
+    margin-top:-0.5em !important;
+    border: 1px solid white;
+    margin:1.5em !important;
+    padding-top: 1.5em;
+  }
+}

@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/tabs/tab6']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Effectuer un paiement</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+     <div class="position">
+      <ion-icon name="document-text-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Sondage sur la 4G</h6>
+    </div>
+    <div class="position">
+      <ion-icon name="document-text-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Type mission: Sondage</h6>
+    </div>
+    <div class="position">
+      <ion-icon name="time-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Temps missions: 10 min</h6>
+    </div>
+    <div class="position">
+      <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Nombre de participants: 07</h6>
+    </div>
+    <div class="sub-position">
+      <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Prime / Participants: <span>1 000 fcfa</span></h6>
+    </div>
+    <div class="sub-position">
+      <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Primes totales participants: <span>7 000 fcfa</span></h6>
+    </div>
+    <div class="sub-position">
+      <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Frais de mission: <span>15 000 fcfa</span></h6>
+    </div>
+    <div class="sub-position">
+      <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Total à payer: <span>8 500 fcfa</span></h6>
+    </div>
+    <div class="position">
+      <ion-icon name="document-outline"></ion-icon>&nbsp;&nbsp;
+      <h6>Description</h6>
+    </div>
+    <p>Occaecat adipisicing ex sit velit enim aliqua ea veniam velit incididunt elit amet ut in ut veniam occaecat ut id ut fugiat consequat</p>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close" [routerLink]="['/tabs/tab6']">ANNULER</ion-button>
+      <ion-button class="save" [routerLink]="['/paiement-e2']">VALIDER</ion-button>
+    </div>
+  </div>
+</ion-content>

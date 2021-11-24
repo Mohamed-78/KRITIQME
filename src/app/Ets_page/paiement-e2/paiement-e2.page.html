@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/paiement-e1']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Effectuer un paiement</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <h6>Total à payer</h6>
+  <ion-item>
+   <ion-input type="text" placeholder="8500 Fcfa"></ion-input>
+  </ion-item>
+
+  <div class="space">
+   <h6>Moyens de paiement</h6>
+    <ion-item id="select">
+      <ion-select value="OM" okText="Choisir" cancelText="Fermer" mode="ios" >
+        <ion-select-option value="OM">Orange money</ion-select-option>
+        <ion-select-option value="MTN">Momo</ion-select-option>
+        <ion-select-option value="MM">Moov money</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="bottom-section ion-padding">
+    <ion-button fill="clear" class="close" [routerLink]="['/tabs/tab6']">ANNULER</ion-button>
+    <ion-button class="save" [routerLink]="['/paiement-e3']">VALIDER</ion-button>
+  </div>
+
+</ion-content>

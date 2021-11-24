@@ -1,0 +1,27 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+      --background: #0394DD;
+      height: 4.5em;
+      h5{
+        color: #FFFFFF;
+      }
+
+      .title-position{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      ion-icon{
+        color:white;
+      }
+
+      ion-icon.search{
+        visibility: hidden;
+      }
+  }
+
+}

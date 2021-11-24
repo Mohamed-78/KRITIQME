@@ -71,6 +71,58 @@ const routes: Routes = [
   {
     path: 'msg-validation',
     loadChildren: () => import('./msg-validation/msg-validation.module').then( m => m.MsgValidationPageModule)
+  },
+  {
+    path: 'liste-activite',
+    loadChildren: () => import('./Ets_page/liste-activite/liste-activite.module').then( m => m.ListeActivitePageModule)
+  },
+  {
+    path: 'historique-activite',
+    loadChildren: () => import('./Ets_page/historique-activite/historique-activite.module').then( m => m.HistoriqueActivitePageModule)
+  },
+  {
+    path: 'creer-activite',
+    loadChildren: () => import('./Ets_page/creer-activite/creer-activite.module').then( m => m.CreerActivitePageModule)
+  },
+  {
+    path: 'effectuer-paiement',
+    loadChildren: () => import('./Ets_page/effectuer-paiement/effectuer-paiement.module').then( m => m.EffectuerPaiementPageModule)
+  },
+  {
+    path: 'paiement-e1',
+    loadChildren: () => import('./Ets_page/paiement-e1/paiement-e1.module').then( m => m.PaiementE1PageModule)
+  },
+  {
+    path: 'paiement-e2',
+    loadChildren: () => import('./Ets_page/paiement-e2/paiement-e2.module').then( m => m.PaiementE2PageModule)
+  },
+  {
+    path: 'paiement-e3',
+    loadChildren: () => import('./Ets_page/paiement-e3/paiement-e3.module').then( m => m.PaiementE3PageModule)
+  },
+  {
+    path: 'paiement-e4',
+    loadChildren: () => import('./Ets_page/paiement-e4/paiement-e4.module').then( m => m.PaiementE4PageModule)
+  },
+  {
+    path: 'historique-paiement',
+    loadChildren: () => import('./Ets_page/historique-paiement/historique-paiement.module').then( m => m.HistoriquePaiementPageModule)
+  },
+  {
+    path: 'detail-activite',
+    loadChildren: () => import('./Ets_page/detail-activite/detail-activite.module').then( m => m.DetailActivitePageModule)
+  },
+  {
+    path: 'creervme1',
+    loadChildren: () => import('./Ets_page/creervme1/creervme1.module').then( m => m.Creervme1PageModule)
+  },
+  {
+    path: 'creervme2',
+    loadChildren: () => import('./Ets_page/creervme2/creervme2.module').then( m => m.Creervme2PageModule)
+  },
+  {
+    path: 'creervme3',
+    loadChildren: () => import('./Ets_page/creervme3/creervme3.module').then( m => m.Creervme3PageModule)
   }
 ];
 @NgModule({

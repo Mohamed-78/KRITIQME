@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/cree-rapport-detaille']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Créer un rapport de notoriété</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h3>Résumé de votre rapport</h3>
+    <h4>La période</h4>
+    <h6>Du <span>29/02/2021 au 01/03/2021</span></h6>
+    <h4>Sexe</h4>
+    <div class="sexe-position">
+      <ion-checkbox checked="checked" mode="ios"></ion-checkbox>
+      <h6>Les deux</h6>
+    </div>
+    <h4>Statut matrimonial</h4>
+    <h6>Célibataire,marié(e)</h6>
+    <h4>Tranche d'âge</h4>
+    <h6>Entre <span>18 ans et 40 ans</span></h6>
+    <h4>Commune</h4>
+    <h6><span>Koumassi</span></h6>
+    <h4>Catégorie Socio-Professionnelle</h4>
+    <h6><span>Etudiants, Travailleurs</span></h6>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close" [routerLink]="['/creer-activite']">ANNULER</ion-button>
+      <ion-button class="save" routerLink="/message-validation-rapport">VALIDER</ion-button>
+    </div>
+
+  </div>
+</ion-content>

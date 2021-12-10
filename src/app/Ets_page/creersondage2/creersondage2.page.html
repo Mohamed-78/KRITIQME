@@ -1,0 +1,75 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/creersondage1']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Configuration du sondage</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding title">
+    <h5>Critères de la population cible</h5>
+
+    <div class="input">
+      <h6>Nombre de participants</h6>
+      <input type="number" name="">
+    </div>
+
+    <div class="input">
+      <h6>Sexe</h6>
+      <select>
+        <option>F</option>
+        <option>M</option>
+        <option>Autres</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <h6>Civilité</h6>
+      <select>
+        <option>Mr</option>
+        <option>Mme</option>
+        <option>Mle</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <h6>Tranche d'âge</h6>
+      <select>
+        <option>18-25</option>
+        <option>25-35</option>
+        <option>35-45</option>
+        <option>35-45</option>
+        <option>45-55</option>
+        <option>55-65</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <h6>Catégories Socio-Professionnelles</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="input">
+      <h6>Pays</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="input">
+      <h6>Ville</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close" routerLink="/creersondage2">PRECEDENT</ion-button>
+      <ion-button class="save" routerLink="/creersondage3">SUIVANT</ion-button>
+    </div>
+
+  </div>
+</ion-content>

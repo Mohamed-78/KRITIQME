@@ -1,0 +1,98 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/liste-activite']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Mes missions</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding title-position">
+    <h4>Liste visites mystères</h4>
+    <ion-icon name="add-circle-outline" color="success" routerLink="/creervme1"></ion-icon>
+  </div>
+  <div class="ion-paddiing">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="special_color">
+            <div class="icon_color">
+              <ion-icon name="ellipse" color="warning"></ion-icon>
+            </div>
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère Prosuma</h6>
+            <span>11/09/2021 - 09h00</span><br>
+            <span class="pay">Paiement effectué</span>
+            <div class="bottom_special">
+              <h6>Mission en cours</h6>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="special_color">
+            <div class="icon_color">
+              <ion-icon name="ellipse" color="success"></ion-icon>
+            </div>
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère 2</h6>
+            <span>11/09/2021 - 09h00</span><br>
+            <span class="pay">Paiement effectué</span>
+            <div class="bottom_special">
+              <h6>Mission terminée</h6>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="special_color">
+            <div class="icon_color">
+              <ion-icon name="ellipse" color="primary"></ion-icon>
+            </div>
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère 3</h6>
+            <span>11/09/2021 - 09h00</span><br>
+            <span class="pay">Paiement effectué</span>
+            <div class="bottom_special">
+              <h6>Mission non débuté</h6>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="special_color">
+            <div class="icon_color">
+              <ion-icon name="ellipse" color="danger"></ion-icon>
+            </div>
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère siège Kou...</h6>
+            <span>11/09/2021 - 09h00</span><br>
+            <span class="pay">Paiement effectué</span>
+            <div class="bottom_special">
+              <h6>Mission annulée</h6>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

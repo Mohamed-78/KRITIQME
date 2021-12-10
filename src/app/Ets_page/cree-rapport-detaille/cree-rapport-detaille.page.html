@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/creer-activite']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Créer un rapport de notoriété</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding title">
+    <h5>Fiche de mission</h5>
+    <span>01 infos mission</span>
+
+    <div class="input">
+      <h6>Choisir la date de début</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Choisir la date de fin</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Sexe</h6>
+      <div class="checkbox-position">
+        <div>
+          <ion-checkbox mode="ios" checked="checked"></ion-checkbox>
+          <h6 class="title_1">Homme</h6>
+        </div>
+        <div class="second-position">
+          <ion-checkbox mode="ios"></ion-checkbox>
+          <h6 class="title_2">Femme</h6>
+        </div>
+        <div class="last-position">
+          <ion-checkbox mode="ios"></ion-checkbox>
+          <h6 class="title_3">Les deux</h6>
+        </div>          
+      </div>
+    </div>
+
+    <div class="input">
+      <h6>Statut matrimonial</h6>
+      <select>
+        <option>Marié(e)</option>
+        <option>Celibataire</option>
+        <option>Divorcé(e)</option>
+        <option>veuf(e)</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <h6>Tranche d'âge</h6>
+      <select>
+        <option>18-25</option>
+        <option>25-35</option>
+        <option>35-45</option>
+        <option>35-45</option>
+        <option>45-55</option>
+        <option>55-65</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <h6>Commune</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="input">
+      <h6>Catégorie Socio-Professionnelles</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="bottom-section">
+      <ion-button class="btn" routerLink="/resume-creation-rapport">SUIVANT</ion-button>
+    </div>
+
+  </div>
+</ion-content>

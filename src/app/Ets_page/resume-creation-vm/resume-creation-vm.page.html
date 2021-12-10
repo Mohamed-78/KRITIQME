@@ -1,0 +1,126 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Résumé visite mystère</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    <div class="first-title-position" (click)="action_1()">
+      <h6>Infos missions</h6>
+      <ion-icon name="chevron-down-outline" *ngIf="ouvrir_1"></ion-icon>
+      <ion-icon name="chevron-forward-outline" *ngIf="!ouvrir_1"></ion-icon>
+    </div>
+    <div *ngIf="ouvrir_1">
+      <div class="sub-vm-position">
+        <ion-icon name="document-attach-outline"></ion-icon>
+        <h5>Visite mystère 1</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="document-attach-outline"></ion-icon>
+        <h5>Type de mission: Visite mystère</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="document-outline"></ion-icon>
+        <h5>Description</h5>
+      </div>
+      <p class="ion-padding">
+        Lorem ipsum occaecat reprehenderit deserunt ut in nisi amet deserunt deserunt esse velit nisi veniam irure non elit commodo aliqua esse dolore
+      </p>
+      <div class="down_position">
+        <h5>
+          <ion-icon name="calendar-clear-outline"></ion-icon>&nbsp;&nbsp;Débute le: 12/12/2020
+        </h5>
+        <h5>
+          <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon>Fini le : 12/12/2020
+        </h5>
+      </div>
+      <div class="down_position">
+        <h5>
+          <ion-icon name="alarm-outline"></ion-icon>&nbsp;&nbsp;Heure début: 10h00
+        </h5>
+        <h5>
+          <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon>heure de fin :15h00
+        </h5>
+      </div>
+      <div class="down_position">
+        <h5>
+          <ion-icon name="location-outline"></ion-icon>&nbsp;&nbsp;Lieu: Abidjan, Marcory
+        </h5>
+      </div>
+      <div class="down_position">
+        <h5>
+          <ion-icon name="card-outline"></ion-icon>&nbsp;&nbsp;Gains: 1 000 fcfa
+        </h5>
+      </div>
+    </div>
+    <hr>
+
+    <div class="first-title-position" (click)="action_2()">
+      <h6>Infos participants</h6>
+      <ion-icon name="chevron-down-outline" *ngIf="ouvrir_2"></ion-icon>
+      <ion-icon name="chevron-forward-outline" *ngIf="!ouvrir_2"></ion-icon>
+    </div>
+    <div *ngIf="ouvrir_2">
+      <div class="sub-vm-position">
+        <ion-icon name="person-outline"></ion-icon>
+        <h5>Nombre de participants: 07</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="person-outline"></ion-icon>
+        <h5>Sexe: Masculin, Feminin</h5>
+      </div>
+        <div class="sub-vm-position">
+        <ion-icon name="person-outline"></ion-icon>
+        <h5>Statut matrimonial: Célibataire, Marié</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="person-outline"></ion-icon>
+        <h5>Tranche d'âge: 20 ans - 45 ans</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="location-outline"></ion-icon>
+        <h5>Pays: Côte d'Ivoire</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="location-outline"></ion-icon>
+        <h5>Ville: Abidjan</h5>
+      </div>
+      <div class="sub-vm-position">
+        <ion-icon name="person-outline"></ion-icon>
+        <h5>Métiers: Travailleurs, chômeurs</h5>
+      </div>
+    </div>
+    <hr>
+    <div class="first-title-position" (click)="action_3()">
+      <h6>Infos mission</h6>
+      <ion-icon name="chevron-down-outline" *ngIf="ouvrir_3"></ion-icon>
+      <ion-icon name="chevron-forward-outline" *ngIf="!ouvrir_3"></ion-icon>
+    </div>
+
+    <div *ngIf="ouvrir_3">
+      <div class="input">
+        <h6>Tâche 1</h6>
+        <input type="text" name="">
+      </div>
+
+      <div class="input">
+        <h6>Tâche 2</h6>
+        <input type="text" name="">
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close">PRECEDENT</ion-button>
+      <ion-button class="save">ENREGISTRER</ion-button>
+    </div>
+
+  </div>
+</ion-content>

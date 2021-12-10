@@ -1,0 +1,86 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/liste-activite']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Rapports de notoriété</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding title-position">
+    <h4>Liste des rapports détaillés</h4>
+    <ion-icon name="add-circle-outline" color="success"></ion-icon>
+  </div>
+  <div class="ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col routerLink="/detail-mission">
+          <ion-card class="card_color">
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère 1</h6>
+            <h5 class="sub_text">11/09/2021 - 09h00</h5>
+            <div class="bottom_elt">
+              <h6>Télécharger</h6>
+              <ion-icon name="download-outline" color="light"></ion-icon>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card_color">
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère 2</h6>
+            <h5 class="sub_text">11/09/2021 - 09h00</h5>
+            <div class="bottom_elt">
+              <h6>Télécharger</h6>
+              <ion-icon name="download-outline" color="light"></ion-icon>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="card_color">
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Sondage text 3</h6>
+            <h5 class="sub_text">11/09/2021 - 09h00</h5>
+            <div class="bottom_elt">
+              <h6>Télécharger</h6>
+              <ion-icon name="download-outline" color="light"></ion-icon>
+            </div>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card class="card_color">
+            <img src="../../assets/img/logo.png">
+            <div class="seperator_first">
+              <hr>
+            </div>
+            <h6>Visite mystère 4</h6>
+            <h5 class="sub_text">11/09/2021 - 09h00</h5>
+            <div class="bottom_elt">
+              <h6>Télécharger</h6>
+              <ion-icon name="download-outline" color="light"></ion-icon>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

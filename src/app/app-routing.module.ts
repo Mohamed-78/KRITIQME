@@ -123,6 +123,50 @@ const routes: Routes = [
   {
     path: 'creervme3',
     loadChildren: () => import('./Ets_page/creervme3/creervme3.module').then( m => m.Creervme3PageModule)
+  },
+  {
+    path: 'cree-rapport-detaille',
+    loadChildren: () => import('./Ets_page/cree-rapport-detaille/cree-rapport-detaille.module').then( m => m.CreeRapportDetaillePageModule)
+  },
+  {
+    path: 'resume-creation-rapport',
+    loadChildren: () => import('./Ets_page/resume-creation-rapport/resume-creation-rapport.module').then( m => m.ResumeCreationRapportPageModule)
+  },
+  {
+    path: 'message-validation-rapport',
+    loadChildren: () => import('./Ets_page/message-validation-rapport/message-validation-rapport.module').then( m => m.MessageValidationRapportPageModule)
+  },
+  {
+    path: 'liste-sondage',
+    loadChildren: () => import('./Ets_page/liste-sondage/liste-sondage.module').then( m => m.ListeSondagePageModule)
+  },
+  {
+    path: 'liste-rapport',
+    loadChildren: () => import('./Ets_page/liste-rapport/liste-rapport.module').then( m => m.ListeRapportPageModule)
+  },
+  {
+    path: 'liste-vm',
+    loadChildren: () => import('./Ets_page/liste-vm/liste-vm.module').then( m => m.ListeVmPageModule)
+  },
+  {
+    path: 'creersondage1',
+    loadChildren: () => import('./Ets_page/creersondage1/creersondage1.module').then( m => m.Creersondage1PageModule)
+  },
+  {
+    path: 'creersondage2',
+    loadChildren: () => import('./Ets_page/creersondage2/creersondage2.module').then( m => m.Creersondage2PageModule)
+  },
+  {
+    path: 'creersondage3',
+    loadChildren: () => import('./Ets_page/creersondage3/creersondage3.module').then( m => m.Creersondage3PageModule)
+  },
+  {
+    path: 'resume-creation-vm',
+    loadChildren: () => import('./Ets_page/resume-creation-vm/resume-creation-vm.module').then( m => m.ResumeCreationVMPageModule)
+  },
+  {
+    path: 'resume-creation-sondage',
+    loadChildren: () => import('./Ets_page/resume-creation-sondage/resume-creation-sondage.module').then( m => m.ResumeCreationSondagePageModule)
   }
 ];
 @NgModule({

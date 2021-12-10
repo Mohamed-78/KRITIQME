@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear" [routerLink]="['/creer-activite']">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Configuration du sondage</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding title">
+    <h5>Information sur le sondage</h5>
+
+    <div class="input">
+      <h6>Nom du sondage</h6>
+      <input type="text" name="">
+    </div>
+
+    <div class="input">
+      <h6>Date de début</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Date de fin</h6>
+      <input type="date" name="">
+    </div>
+
+    <div class="input">
+      <h6>Heure de début</h6>
+      <input type="time" name="">
+    </div>
+
+    <div class="input">
+      <h6>Heure de fin</h6>
+      <input type="time" name="">
+    </div>
+
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close">PRECEDENT</ion-button>
+      <ion-button class="save" routerLink="/creersondage2">SUIVANT</ion-button>
+    </div>
+
+  </div>
+</ion-content>

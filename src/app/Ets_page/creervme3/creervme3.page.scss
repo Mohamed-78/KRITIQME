@@ -4,24 +4,24 @@
 
 ion-header{
   ion-toolbar{
-      --background: #0394DD;
-      height: 4.5em;
-      h5{
-        color: #FFFFFF;
-      }
+    --background: #0394DD;
+    height: 4.5em;
+    h5{
+      color: #FFFFFF;
+    }
 
-      .title-position{
-        display:flex;
-        justify-content:space-between;
-      }
+    .title-position{
+      display:flex;
+      justify-content:space-between;
+    }
 
-      ion-icon{
-        color:white;
-      }
+    ion-icon{
+      color:white;
+    }
 
-      ion-icon.search{
-        visibility: hidden;
-      }
+    ion-icon.search{
+      visibility: hidden;
+    }
   }
 
 }
@@ -30,52 +30,6 @@ ion-content{
   .title{
     h5{
       font-weight: 600;
-    }
-  }
-
-  .position_btn{
-
-    display:flex;
-    justify-content:space-between;
-    margin-top:-3.5em;
-
-    .btn_add{
-      margin-top:1em;
-      --border-radius:none;
-      margin-right: -18em !important;
-    }
-
-    .btn_trash{
-      margin-top:1em;
-      --border-radius:none;
-      margin-right: 0.5em !important;
-      color: red;
-    }
-
-    .btn_trash_only{
-      margin-top:-0.5em;
-      --border-radius:none;
-      margin-right: 1.2em !important;
-      color: red;
-    }
-
-    ion-icon{
-      font-size: 25px;
-    }
-  }
-
-  .position{
-
-    display:flex;
-    justify-content:space-between;
-
-    .btn_add{
-      margin-top:1em;
-      --border-radius:none;
-    }
-
-    ion-icon{
-      font-size: 25px;
     }
   }
 
@@ -94,8 +48,12 @@ ion-content{
       padding: 1em;
     }
 
-    textarea{
+    select{
       border-radius: 10px;
+      height:50px;
+      width: 372px;
+      border: 1px solid gray;
+      padding-left: 1em;
     }
   }
 

@@ -14,7 +14,7 @@
 <ion-content>
 
   <div class="ion-padding title">
-    <h5>Information sur le sondage</h5>
+    <h5>Qustionnaires</h5>
 
     <div class="input">
       <h6>Question 1</h6>
@@ -30,7 +30,99 @@
         <option>Choix unique</option>
       </select>
     </div>
-
+      <div class="position_btn">
+        <ion-button class="btn_add" slot="end" fill="clear" size="small" 
+          *ngIf="!toggled" (click)="toggle()">
+          <ion-icon name="add-circle-outline" color="success"></ion-icon>
+        </ion-button>
+      </div>
+      <div class="input space" *ngIf="toggled">
+        <div class="input-title">
+          <h6>Question 2</h6>
+            <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="!toggled_task_3" 
+          (click)="toggle_task_4()">
+            <ion-icon name="add-circle-outline" color="success"></ion-icon>
+            </ion-button>
+            <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled" 
+              (click)="toggle()">
+              <ion-icon name="remove-circle-outline"></ion-icon>
+            </ion-button>
+        </div>
+        <input type="text" name="">
+        <h6>Types de reponses</h6>
+        <select>
+          <option></option>
+          <option>Photo</option>
+          <option>Choix multiples</option>
+          <option>Choix unique</option>
+        </select>
+      </div>
+      <div class="input space" *ngIf="toggled_task_4">
+        <div class="input-title">
+          <h6>Question 3</h6>
+            <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="toggled_task_4" 
+              (click)="toggle_task_5()">
+            <ion-icon name="add-circle-outline" color="success"></ion-icon>
+            </ion-button>
+            <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled_task_4" 
+              (click)="toggle_task_4()">
+              <ion-icon name="remove-circle-outline"></ion-icon>
+            </ion-button>
+        </div>
+        <input type="text" name="">
+        <h6>Types de reponses</h6>
+        <select>
+          <option></option>
+          <option>Photo</option>
+          <option>Choix multiples</option>
+          <option>Choix unique</option>
+        </select>
+      </div>
+      <div class="input space" *ngIf="toggled_task_5">
+        <div class="input-title">
+          <h6>Question 4</h6>
+            <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="toggled_task_5" 
+              (click)="toggle_task_6()">
+            <ion-icon name="add-circle-outline" color="success"></ion-icon>
+            </ion-button>
+            <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled_task_5" 
+              (click)="toggle_task_5()">
+              <ion-icon name="remove-circle-outline"></ion-icon>
+            </ion-button>
+        </div>
+        <input type="text" name="">
+        <h6>Types de reponses</h6>
+        <select>
+          <option></option>
+          <option>Photo</option>
+          <option>Choix multiples</option>
+          <option>Choix unique</option>
+        </select>
+      </div>
+      <div class="input space" *ngIf="toggled_task_6">
+        <div class="input-title">
+          <h6>Question 5</h6>
+            <ion-button class="btn_add" slot="end" fill="clear" size="small">
+            <ion-icon name="add-circle-outline" color="success"></ion-icon>
+            </ion-button>
+            <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled_task_6" 
+              (click)="toggle_task_6()">
+              <ion-icon name="remove-circle-outline"></ion-icon>
+            </ion-button>
+        </div>
+        <input type="text" name="">
+        <h6>Types de reponses</h6>
+        <select>
+          <option></option>
+          <option>Photo</option>
+          <option>Choix multiples</option>
+          <option>Choix unique</option>
+        </select>
+      </div>
+    <div class="bottom-section">
+      <ion-button fill="clear" class="close" [routerLink]="['/creersondage2']">PRECEDENT</ion-button>
+      <ion-button class="save">SUIVANT</ion-button>
+    </div>
   </div>
 
 </ion-content>

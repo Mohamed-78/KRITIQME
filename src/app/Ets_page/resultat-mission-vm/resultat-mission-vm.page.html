@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Résultat visite mystère</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <div class="title-position">
+      <h3>Visite mystère 2</h3>
+      <img src="../../assets/img/download.png">
+    </div>
+    <h6>11/09/2021 heure de début:09h00 - heure fin: 11h00</h6>
+    <div>
+      <div class="title-position" (click)="action_1()">
+        <h4>Tâche 1</h4>
+        <ion-icon name="chevron-down-outline" *ngIf="!ouvrir_1"></ion-icon>
+        <ion-icon name="chevron-forward-outline" *ngIf="ouvrir_1"></ion-icon>
+      </div>
+      <div class="input" *ngIf="!ouvrir_1">
+        <input type="text" name="" placeholder="First save this file as a cloud document">
+        <div class="sub-element">
+          <ion-icon name="ellipse" color="success"></ion-icon>&nbsp;&nbsp;
+          <h6>Taux de participation 89%</h6>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title-position" (click)="action_2()">
+        <h4>Tâche 2</h4>
+        <ion-icon name="chevron-down-outline" *ngIf="!ouvrir_2"></ion-icon>
+        <ion-icon name="chevron-forward-outline" *ngIf="ouvrir_2"></ion-icon>
+      </div>
+      <div class="input" *ngIf="!ouvrir_2">
+        <input type="text" name="" placeholder="First save this file as a cloud document">
+        <div class="sub-element">
+          <ion-icon name="ellipse" color="success"></ion-icon>&nbsp;&nbsp;
+          <h6>Taux de participation 89%</h6>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title-position" (click)="action_3()">
+        <h4>Tâche 3</h4>
+        <ion-icon name="chevron-down-outline" *ngIf="!ouvrir_3"></ion-icon>
+        <ion-icon name="chevron-forward-outline" *ngIf="ouvrir_3"></ion-icon>
+      </div>
+      <div class="input" *ngIf="!ouvrir_3">
+        <input type="text" name="" placeholder="First save this file as a cloud document">
+        <div class="sub-element">
+          <ion-icon name="ellipse" color="success"></ion-icon>&nbsp;&nbsp;
+          <h6>Taux de participation 89%</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

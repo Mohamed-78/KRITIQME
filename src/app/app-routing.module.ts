@@ -167,6 +167,18 @@ const routes: Routes = [
   {
     path: 'resume-creation-sondage',
     loadChildren: () => import('./Ets_page/resume-creation-sondage/resume-creation-sondage.module').then( m => m.ResumeCreationSondagePageModule)
+  },
+  {
+    path: 'detail-rapport',
+    loadChildren: () => import('./Ets_page/detail-rapport/detail-rapport.module').then( m => m.DetailRapportPageModule)
+  },
+  {
+    path: 'resultat-mission-vm',
+    loadChildren: () => import('./Ets_page/resultat-mission-vm/resultat-mission-vm.module').then( m => m.ResultatMissionVmPageModule)
+  },
+  {
+    path: 'resultat-sondage',
+    loadChildren: () => import('./Ets_page/resultat-sondage/resultat-sondage.module').then( m => m.ResultatSondagePageModule)
   }
 ];
 @NgModule({

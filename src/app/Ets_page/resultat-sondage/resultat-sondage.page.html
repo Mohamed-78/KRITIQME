@@ -1,0 +1,150 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="title-position">
+      <ion-button fill="clear">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <h5>Mes sondages</h5>
+      <ion-button fill="clear">
+        <ion-icon name="search" class="search"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <div class="title-position">
+      <h4>Sondage sur la 4G MTN</h4>
+      <img src="../../assets/img/download.png">
+    </div>
+    <ion-badge color="success" slot="start">Paiement effectué</ion-badge> 
+    <div class="date-position">
+      <h6>Il y'a 3h</h6>
+    </div>
+  </div>
+  <div class="ion-padding top">
+    <div class="chart-container">
+      <canvas #doughnutCanvas></canvas>
+      <h5>Taux de <br>participation<br><b>100%</b></h5>
+    </div>
+    <div class="left_element">
+      <h6 class="first_title"><ion-icon name="square"></ion-icon>
+        &nbsp;&nbsp;
+        Hommes&nbsp;&nbsp;<b>55%</b>
+      </h6>
+      <h6 class="second_title"><ion-icon name="square"></ion-icon>
+        &nbsp;&nbsp;
+        Femmes&nbsp;&nbsp;<b>45%</b></h6>
+      </div>
+  </div>
+  <div class="first-title-position ion-padding" (click)="action_1()">
+    <h6><b>Catégorie Socio-Professionnelles</b></h6>
+    <ion-icon name="chevron-down-outline" *ngIf="!ouvrir_1"></ion-icon>
+    <ion-icon name="chevron-forward-outline" *ngIf="ouvrir_1"></ion-icon>
+  </div>
+  <div class="ion-padding top" *ngIf="!ouvrir_1">
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="tertiary"></ion-icon>&nbsp;&nbsp;Travailleurs
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>50%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="success"></ion-icon>&nbsp;&nbsp;Ménagères
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>25%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="warning"></ion-icon>&nbsp;&nbsp;Etudiants
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>15%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" class="i_color"></ion-icon>&nbsp;&nbsp;Chomeurs
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>10%</b>
+      </h5>
+    </div>
+  </div>
+  <div class="first-title-position ion-padding top" (click)="action_2()">
+    <h6><b>Tranches d'âge</b></h6>
+    <ion-icon name="chevron-down-outline" *ngIf="ouvrir_2"></ion-icon>
+    <ion-icon name="chevron-forward-outline" *ngIf="!ouvrir_2"></ion-icon>
+  </div>
+  <div class="ion-padding top" *ngIf="ouvrir_2">
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="primary"></ion-icon>&nbsp;&nbsp;Travailleurs
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>50%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="success"></ion-icon>&nbsp;&nbsp;Ménagères
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>25%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="warning"></ion-icon>&nbsp;&nbsp;Etudiants
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>15%</b>
+      </h5>
+    </div>
+  </div>
+  <div class="first-title-position ion-padding top" (click)="action_3()">
+    <h6><b>Statut matrimonial</b></h6>
+    <ion-icon name="chevron-down-outline" *ngIf="ouvrir_3"></ion-icon>
+    <ion-icon name="chevron-forward-outline" *ngIf="!ouvrir_3"></ion-icon>
+  </div>
+  <div class="ion-padding top" *ngIf="ouvrir_3">
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="primary"></ion-icon>&nbsp;&nbsp;Célibataire
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>50%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="success"></ion-icon>&nbsp;&nbsp;Marié(e)
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>25%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="warning"></ion-icon>&nbsp;&nbsp;Veuf(e)
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>15%</b>
+      </h5>
+    </div>
+    <div class="down_position">
+      <h5>
+        <ion-icon name="square" color="warning"></ion-icon>&nbsp;&nbsp;Divorcé(s)
+      </h5>
+      <h5>
+        <ion-icon name="share-social-outline" style="visibility:hidden;"></ion-icon><b>10%</b>
+      </h5>
+    </div>
+  </div>
+</ion-content>

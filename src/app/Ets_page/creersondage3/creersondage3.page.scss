@@ -49,7 +49,7 @@ ion-content{
     }
   }
 
-  select{
+  ion-select{
     border-radius: 10px;
     height:50px;
     width: 372px;
@@ -146,4 +146,23 @@ ion-content{
     }
   }
 
+}
+
+@media screen and (max-width: 360px) {
+
+  .input > input{
+    height:50px;
+    width: 325px !important;
+  }
+
+  ion-select{
+    width: 325px !important;
+  }
+
+  .input-title{
+
+    .btn_add{
+      margin-right: -16em !important;
+    }
+  }
 }

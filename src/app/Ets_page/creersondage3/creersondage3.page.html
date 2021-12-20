@@ -23,12 +23,13 @@
 
     <div class="input">
       <h6>Types de reponses</h6>
-      <select>
-        <option></option>
-        <option>Photo</option>
-        <option>Choix multiples</option>
-        <option>Choix unique</option>
-      </select>
+      <ion-select value="Photo" mode="ios" okText="Choisir" cancelText="Fermer" mode="ios" (ionChange)="choix_multiple($event)">
+        <ion-select-option value="Photo">Photo</ion-select-option>
+        <ion-select-option value="Choix_mutilple">
+          Choix multiples
+        </ion-select-option>
+        <ion-select-option value="Choix_unique">Choix unique</ion-select-option>
+      </ion-select>
     </div>
       <div class="position_btn">
         <ion-button class="btn_add" slot="end" fill="clear" size="small" 
@@ -50,12 +51,12 @@
         </div>
         <input type="text" name="">
         <h6>Types de reponses</h6>
-        <select>
-          <option></option>
-          <option>Photo</option>
-          <option>Choix multiples</option>
-          <option>Choix unique</option>
-        </select>
+        <ion-select>
+          <ion-select-option></ion-select-option>
+          <ion-select-option>Photo</ion-select-option>
+          <ion-select-option>Choix multiples</ion-select-option>
+          <ion-select-option>Choix unique</ion-select-option>
+        </ion-select>
       </div>
       <div class="input space" *ngIf="toggled_task_4">
         <div class="input-title">
@@ -71,12 +72,12 @@
         </div>
         <input type="text" name="">
         <h6>Types de reponses</h6>
-        <select>
-          <option></option>
-          <option>Photo</option>
-          <option>Choix multiples</option>
-          <option>Choix unique</option>
-        </select>
+        <ion-select>
+          <ion-select-option></ion-select-option>
+          <ion-select-option>Photo</ion-select-option>
+          <ion-select-option>Choix multiples</ion-select-option>
+          <ion-select-option>Choix unique</ion-select-option>
+        </ion-select>
       </div>
       <div class="input space" *ngIf="toggled_task_5">
         <div class="input-title">
@@ -92,12 +93,12 @@
         </div>
         <input type="text" name="">
         <h6>Types de reponses</h6>
-        <select>
-          <option></option>
-          <option>Photo</option>
-          <option>Choix multiples</option>
-          <option>Choix unique</option>
-        </select>
+        <ion-select>
+          <ion-select-option></ion-select-option>
+          <ion-select-option>Photo</ion-select-option>
+          <ion-select-option>Choix multiples</ion-select-option>
+          <ion-select-option>Choix unique</ion-select-option>
+        </ion-select>
       </div>
       <div class="input space" *ngIf="toggled_task_6">
         <div class="input-title">
@@ -112,16 +113,16 @@
         </div>
         <input type="text" name="">
         <h6>Types de reponses</h6>
-        <select>
-          <option></option>
-          <option>Photo</option>
-          <option>Choix multiples</option>
-          <option>Choix unique</option>
-        </select>
+        <ion-select>
+          <ion-select-option></ion-select-option>
+          <ion-select-option>Photo</ion-select-option>
+          <ion-select-option>Choix multiples</ion-select-option>
+          <ion-select-option>Choix unique</ion-select-option>
+        </ion-select>
       </div>
     <div class="bottom-section">
       <ion-button fill="clear" class="close" [routerLink]="['/creersondage2']">PRECEDENT</ion-button>
-      <ion-button class="save">SUIVANT</ion-button>
+      <ion-button class="save" [routerLink]="['/message-validation-sondage']">SUIVANT</ion-button>
     </div>
   </div>
 

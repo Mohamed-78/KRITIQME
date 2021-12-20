@@ -173,4 +173,20 @@ ion-content{
     top: 0.0em;
     left: 8.7em !important;
   }
+
+  .bottom_special > h6{
+    font-size:10px !important;
+  }
+
+  .btn {
+    height: 30px !important;
+    width: 70px !important;
+    font-weight:500 !important;
+  }
+
+  .title-position{
+   ion-icon{
+      margin-top:0.5em !important;
+   }
+  }
 }

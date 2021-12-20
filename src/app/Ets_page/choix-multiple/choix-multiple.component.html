@@ -1,0 +1,124 @@
+<ion-content>
+   <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card>
+              <div class="ion-padding">
+                <div class="position-title">
+                  <h5>Renseigner les réponses à choix mutilple</h5>
+                  <ion-icon name="close-circle" (click)="close()"></ion-icon>
+                </div>
+                <div class="input">
+                  <h6>Réponse 1</h6>
+                  <input type="text" name="">
+                </div>
+                <div class="position_btn">
+                  <ion-button class="btn_add" slot="end" fill="clear" size="small" (click)="toggle()" 
+                    *ngIf="!toggled">
+                    <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                  </ion-button>
+                </div>
+                <div class="input space" *ngIf="toggled">
+                  <div class="input-title">
+                    <h6>Réponse 2</h6>
+                    <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="!toggled_task_3" 
+                    (click)="toggle_task_4()">
+                      <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                    </ion-button>
+                    <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled" 
+                    (click)="toggle()">
+                      <ion-icon name="remove-circle-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                  <input type="text" name="">
+                </div>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card>
+              <div class="ion-padding">
+                <div class="position-title">
+                  <h5>Renseigner les réponses à choix unique</h5>
+                  <ion-icon name="close-circle" (click)="close()"></ion-icon>
+                </div>
+                <div class="input">
+                  <h6>Réponse 1</h6>
+                  <input type="text" name="">
+                </div>
+                <div class="position_btn">
+                  <ion-button class="btn_add" slot="end" fill="clear" size="small" (click)="toggle()" 
+                    *ngIf="!toggled">
+                    <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                  </ion-button>
+                </div>
+                <div class="input space" *ngIf="toggled">
+                  <div class="input-title">
+                    <h6>Réponse 2</h6>
+                    <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="!toggled_task_3" 
+                      (click)="toggle_task_4()">
+                      <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                    </ion-button>
+                    <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled" 
+                      (click)="toggle()">
+                      <ion-icon name="remove-circle-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                  <input type="text" name="">
+                </div>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card>
+              <div class="ion-padding">
+                <div class="position-title">
+                  <h5>Renseigner les réponses à réponse libre</h5>
+                  <ion-icon name="close-circle" (click)="close()"></ion-icon>
+                </div>
+                <div class="input">
+                  <h6>Réponse 1</h6>
+                  <input type="text" name="">
+                </div>
+                <div class="position_btn">
+                  <ion-button class="btn_add" slot="end" fill="clear" size="small" (click)="toggle()" 
+                    *ngIf="!toggled">
+                    <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                  </ion-button>
+                </div>
+                <div class="input space" *ngIf="toggled">
+                  <div class="input-title">
+                    <h6>Réponse 2</h6>
+                    <ion-button class="btn_add" slot="end" fill="clear" size="small" *ngIf="!toggled_task_3" 
+                      (click)="toggle_task_4()">
+                      <ion-icon name="add-circle-outline" color="success"></ion-icon>
+                    </ion-button>
+                    <ion-button class="btn_trash" slot="end" fill="clear" size="small" *ngIf="toggled" 
+                      (click)="toggle()">
+                      <ion-icon name="remove-circle-outline"></ion-icon>
+                    </ion-button>
+                  </div>
+                  <input type="text" name="">
+                </div>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

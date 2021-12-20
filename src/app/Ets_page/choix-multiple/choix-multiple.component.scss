@@ -1,0 +1,105 @@
+ion-content{
+	 --background: transparent !important;
+	h5{
+		color:black;
+	}
+
+	ion-slides{
+		margin-top:13em;
+		--margin:0px;
+	}
+
+	ion-card{
+		margin-top:2em;
+		margin:0;
+	}
+
+	.input{
+		margin-top: 1.5em;
+
+		h6{
+			margin-bottom: 0.5em;
+			text-align: left;
+			font-size:12;
+			color:black;
+		}
+
+		input{
+			border-radius: 10px;
+			height:50px;
+			width: 372px;
+			border: 1px solid gray;
+			padding: 1em;
+		}
+	}
+
+	.position_btn{
+		display:flex;
+		justify-content:flex-end;
+		margin-top:0.7em;
+
+		.btn_add{
+			margin-top:1em;
+			--border-radius:none;
+		}
+
+		.btn_trash{
+			margin-top:1em;
+			--border-radius:none;
+			color: red;
+		}
+
+		.btn_trash_only{
+			margin-top:-0.5em;
+			--border-radius:none;
+			margin-right: 1.2em !important;
+			color: red;
+		}
+
+		ion-icon{
+			font-size: 25px;
+		}
+	}
+
+	.input-title{
+		display:flex;
+		justify-content:space-between;
+
+		.btn_add{
+			margin-top:1em;
+			--border-radius:none;
+			margin-left: 14em !important;
+		}
+
+		.btn_trash{
+			margin-top:1em;
+			--border-radius:none;
+			color: red;
+		}
+
+		.btn_trash_only{
+			margin-top:-0.5em;
+			--border-radius:none;
+			margin-right: 1.2em !important;
+			color: red;
+		}
+
+		ion-icon{
+			font-size: 25px;
+		}
+	}
+
+	.space{
+		margin-top:-0.3em;
+	}
+
+	.position-title{
+		display:flex;
+		justify-content:space-between;
+
+		ion-icon{
+			font-size:25px;
+			color:black;
+		}
+	}
+}

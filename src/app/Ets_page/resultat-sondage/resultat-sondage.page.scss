@@ -141,3 +141,28 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+    .title-position > img{
+    width: 25px !important;
+    height: 25px !important;
+    margin-top: 0.9em !important;
+  }
+
+  .chart-container {
+    height: 10vh !important;
+    width: 37vw !important;
+
+    h5{
+      margin-top:-6em !important;
+      font-size:15px;
+      text-align:center;
+      color:#9ca0b8;
+
+      b{
+        font-size:20px !important;
+      }
+    }
+  }
+
+}

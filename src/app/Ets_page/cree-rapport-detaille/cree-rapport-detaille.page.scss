@@ -100,6 +100,7 @@ ion-content{
     height:50px;
     width: 372px;
     border: 1px solid gray;
+    padding:1em;
   }
 
   .bottom-section {
@@ -120,4 +121,24 @@ ion-content{
     }
   }
 
+}
+
+@media screen and (max-width: 360px) {
+
+  .input > input{
+    height:50px;
+    width: 325px !important;
+  }
+
+  select{
+    width: 325px !important;
+  }
+
+  .btn {
+      width: 325px !important;
+    }
+
+  .title-position > h5{
+    font-size:16px;
+  }
 }

@@ -82,3 +82,11 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+
+  .input > input{
+    height:50px;
+    width: 325px !important;
+  }
+}

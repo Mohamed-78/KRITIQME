@@ -54,6 +54,7 @@ ion-content{
 
     textarea{
       border-radius: 10px;
+      padding: 1em;
     }
   }
 
@@ -80,5 +81,22 @@ ion-content{
       text-transform: none;
       color: grey;
     }
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .input > input{
+    height:50px;
+    width: 325px !important;
+  }
+
+  ion-select{
+    width: 325px !important;
+  }
+
+  textarea{
+    width: 325px !important;
+    height:150px !important;
   }
 }

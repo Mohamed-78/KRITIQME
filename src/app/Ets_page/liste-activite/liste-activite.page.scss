@@ -53,3 +53,10 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+
+  .position > ion-icon{
+   margin-top:0.2em;
+  }
+}

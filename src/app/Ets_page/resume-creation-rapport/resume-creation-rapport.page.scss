@@ -75,3 +75,10 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+
+  .title-position > h5{
+    font-size:16px;
+  }
+}

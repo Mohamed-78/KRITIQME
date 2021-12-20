@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ChoixMultipleComponent } from '../choix-multiple/choix-multiple.component';
 
 @Component({
   selector: 'app-creersondage3',
@@ -23,9 +25,17 @@ export class Creersondage3Page implements OnInit {
   public toggled_task_15: boolean = false;
 
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
+  }
+
+   async choix_multiple(selectedValue: any) {
+    const modalCtrl = await this.modalCtrl.create({
+      component: ChoixMultipleComponent,
+      cssClass: 'transparent-modal'
+    });
+    await modalCtrl.present();
   }
 
   public toggle(): void {
@@ -84,5 +94,6 @@ export class Creersondage3Page implements OnInit {
   public toggle_task_15():void{
     this.toggled_task_15 = !this.toggled_task_15;
   }
+
 
 }

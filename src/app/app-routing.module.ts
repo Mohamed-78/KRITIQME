@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { VoterComponent } from './voter/voter.component';
 import { DonnerAvisComponent } from  './donner-avis/donner-avis.component';
+import { ChoixMultipleComponent } from './Ets_page/choix-multiple/choix-multiple.component';
 
 const routes: Routes = [
   {
@@ -179,6 +180,10 @@ const routes: Routes = [
   {
     path: 'resultat-sondage',
     loadChildren: () => import('./Ets_page/resultat-sondage/resultat-sondage.module').then( m => m.ResultatSondagePageModule)
+  },
+  {
+    path: 'message-validation-sondage',
+    loadChildren: () => import('./Ets_page/message-validation-sondage/message-validation-sondage.module').then( m => m.MessageValidationSondagePageModule)
   }
 ];
 @NgModule({

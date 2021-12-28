@@ -14,20 +14,22 @@
 <ion-content>
 
   <h6 class='title'>Fiche de paiement</h6>
-  
-  <h6>Montant à verser</h6>
-  <ion-item>
-   <ion-input type="text"></ion-input>
-  </ion-item>
+  <div class="ion-padding">
+    <div class="input">
+      <h6>Montant à verser</h6>
+      <input type="number" name="">
+    </div>
 
- <h6>Moyens de paiement</h6>
-  <ion-item id="select">
-     <ion-select value="OM" okText="Choisir" cancelText="Fermer" mode="ios" >
-      <ion-select-option value="OM">Orange money</ion-select-option>
-      <ion-select-option value="MTN">Momo</ion-select-option>
-      <ion-select-option value="MM">Moov money</ion-select-option>
-    </ion-select>
-  </ion-item>
+    <div class="input">
+      <h6>Moyens de paiement</h6>
+      <select>
+        <option>Orange money</option>
+        <option>Flooz</option>
+        <option>Momo</option>
+      </select>
+    </div>
+
+  </div>
 
   <div class="bottom-section">
     <h6><sup>*</sup>&nbsp;Paiement à partir de 10 000 fcfa</h6>

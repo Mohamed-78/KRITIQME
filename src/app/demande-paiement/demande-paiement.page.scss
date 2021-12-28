@@ -4,24 +4,24 @@
 
 ion-header{
   ion-toolbar{
-      --background: #0394DD;
-      height: 4.5em;
-      h5{
-        color: #FFFFFF;
-      }
+    --background: #0394DD;
+    height: 4.5em;
+    h5{
+      color: #FFFFFF;
+    }
 
-      .title-position{
-        display:flex;
-        justify-content:space-between;
-      }
+    .title-position{
+      display:flex;
+      justify-content:space-between;
+    }
 
-      ion-icon{
-        color:white;
-      }
+    ion-icon{
+      color:white;
+    }
 
-      ion-icon.search{
-        visibility: hidden;
-      }
+    ion-icon.search{
+      visibility: hidden;
+    }
   }
 
 }
@@ -30,42 +30,33 @@ ion-content{
   .title{
     margin-left: 1em;
     font-weight: 600;
-    margin-bottom:2em;
+    margin-bottom:0.5em;
   }
 
-  ion-item {
-    --ion-item-background: transparent;
-    --border-width: 0;
-    --inner-border-width: 0;
-    --highlight-color-focused: none;
-    margin-bottom: 15px;
+  .input{
+    margin-top: 1.5em;
 
-    ion-input {
-      width: 300px;
-      height: 48px;
-      border-radius:none;
-      border: 1px solid #e2e2e2;
-      font-size: 15px;
-      border-radius:8px;
-      color: #000;
-      --padding-start: 30px;
+    h6{
+      margin-bottom: 0.5em;
+    }
+
+    input{
+      border-radius: 10px;
+      height:50px;
+      width: 372px;
+      border: 1px solid gray;
+      padding: 1em;
+      background: white;
     }
   }
 
-  h6{
-    margin-left: 1em;
-  }
-
-  #select {
-    width: 330px;
-    height: 48px;
-    border-radius: none;
-    border: 1px solid #e2e2e2;
-    font-size: 15px;
-    color: #000;
-    border-radius:8px;
-    --padding-start: 30px;
-    margin-left: 1.2em;
+  select{
+    border-radius: 10px;
+    height:50px;
+    width: 372px;
+    border: 1px solid gray;
+    background: white;
+    padding: 1em;
   }
 
   .bottom-section {
@@ -102,7 +93,7 @@ ion-content{
     width: 380px !important;
   }
 
-   .btn{
+  .btn{
     width: 375px !important;
   }
 
@@ -114,7 +105,7 @@ ion-content{
     width: 350px !important;
   }
 
-   .btn{
+  .btn{
     width: 350px !important;
   }
 

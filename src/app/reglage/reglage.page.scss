@@ -38,7 +38,7 @@ ion-content{
   .menu-position{
     display:flex;
     justify-content:space-between;
-    margin-bottom: -1em;
+    //margin-bottom: -1em;
 
     ion-button{
       margin-top: 0.6em;
@@ -57,7 +57,7 @@ ion-content{
     ion-toggle{
       margin-top: 0.6em;
       --handle-background-checked: #fff url(/assets/allumer.png) no-repeat center / contain;
-       width: 70px;
+       width: 60px;
        --background-checked:#41AA37;
     }
   }

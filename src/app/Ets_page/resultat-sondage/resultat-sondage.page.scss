@@ -143,7 +143,7 @@ ion-content{
 }
 
 @media screen and (max-width: 360px) {
-    .title-position > img{
+  .title-position > img{
     width: 25px !important;
     height: 25px !important;
     margin-top: 0.9em !important;
@@ -163,6 +163,46 @@ ion-content{
         font-size:20px !important;
       }
     }
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .chart-container {
+    height: 10vh !important;
+    width: 40vw !important;
+
+    h5{
+      margin-top:-6em !important;
+      font-size:15px;
+      text-align:center;
+      color:#9ca0b8;
+
+      b{
+        font-size:20px !important;
+      }
+    }
+  }
+
+  .left_element > h6{
+    margin-left:8em !important;
+    font-size:13px;
+  }
+
+  .title-position > h4 {
+    font-size:18px;
+  }
+
+  .first-title-position > h6 {
+    font-size:14px;
+  }
+
+  .title-position > h5 {
+    margin-top:1.5em !important;
+  }
+
+  .title-position > .back-btn{
+    margin-top:1.5em !important;
   }
 
 }

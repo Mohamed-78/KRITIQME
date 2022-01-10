@@ -81,3 +81,39 @@ ion-content{
     margin-top:8em !important;
   }
 }
+
+@media screen and (max-width: 320px) {
+
+  h3{
+    font-size:20px;
+  }
+
+  .title-position > .back-btn{
+    margin-top:1em !important;
+  }
+  
+  .bottom-section {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:2.2em;
+
+    .next {
+      height: 40px !important;
+      width: 210px !important;
+      font-size: 12px !important;;
+      font-weight: bold;
+      text-transform: none;
+      --background: #0062cc;
+      --border-radius: 8px;
+      color: #fff;
+    }
+
+    .back{
+      font-size: 12px !important;;
+      font-weight: bold !important;
+      text-transform: none;
+      color: grey;
+    }
+  }
+}

@@ -53,3 +53,17 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .title-position > h5 {
+    margin-top:1.5em !important;
+  }
+
+  .title-position > .back-btn{
+    margin-top:1.5em !important;
+  }
+
+  .position > h6 {
+    font-size:14px !important;
+  }
+}

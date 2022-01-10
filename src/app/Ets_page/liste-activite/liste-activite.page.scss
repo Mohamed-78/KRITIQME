@@ -60,3 +60,13 @@ ion-content{
    margin-top:0.2em;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .title-position > h5 {
+    margin-top:1.5em !important;
+  }
+
+  .title-position > .back-btn{
+    margin-top:1.5em !important;
+  }
+}

@@ -144,3 +144,38 @@ ion-content{
     font-size:16px;
   }
 }
+@media screen and (max-width: 320px) {
+
+  .input > input{
+    height:50px;
+    width: 290px !important;
+  }
+
+  select{
+    border-radius: 10px;
+    height:50px;
+    width: 290px !important;
+    border: 1px solid gray;
+    padding:1em;
+    background: white;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:2em;
+    margin-bottom:1em;
+    .next {
+      height: 50px;
+      width: 290px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: none;
+      --background: #0062cc;
+      --border-radius: 8px;
+      color: #fff;
+    }
+  }
+
+}

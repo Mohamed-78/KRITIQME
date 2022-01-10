@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="title-position">
-      <ion-button fill="clear" [routerLink]="['/resume-creation-rapport']">
+      <ion-button fill="clear" [routerLink]="['/resume-creation-rapport']" class="back-btn">
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
       <h5>Créer un rapport de notoriété</h5>
@@ -21,8 +21,8 @@
   <h6 align="center">Vous devriez vous acquitté de la somme de<br> <b>5000 fcfa</b> pour le téléchargement</h6>
 
   <div class="bottom-section ion-padding">
-    <ion-button fill="clear" class="close" [routerLink]="['/creer-activite']">ANNULER</ion-button>
-    <ion-button class="save" routerLink="/message-validation-rapport">PASSER AU PAIEMENT</ion-button>
+    <ion-button fill="clear" class="back" [routerLink]="['/creer-activite']">ANNULER</ion-button>
+    <ion-button class="next" routerLink="/message-validation-rapport">PASSER AU PAIEMENT</ion-button>
   </div>
 
 </ion-content>

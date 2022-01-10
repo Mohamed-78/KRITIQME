@@ -254,7 +254,7 @@ ion-content{
 
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   .t1{
       margin-left:0.7em !important;
     }
@@ -282,5 +282,51 @@ ion-content{
     border: 1px solid white;
     margin:1.5em !important;
     padding-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .t1{
+      margin-left:0.7em !important;
+    }
+
+    h5{
+      color:grey;
+      font-size:14px !important;
+    }
+
+    .list_activity, .mission_title, .history_title, .demande_title, .statut_title{
+      margin-right: -3.5em !important;
+    }
+
+    .t1{
+      margin-top:1.8em !important;
+      margin-left:-0.3em !important;
+    }
+
+    .t2{
+      margin-top:1.7em !important;
+      margin-right: -3.5em !important;
+    }
+
+    .t3{
+      margin-top:1.7em !important;
+    }
+
+  .cardre{
+    margin-top:-0.5em !important;
+    border: 1px solid white;
+    margin:1em !important;
+    padding-top: 1.5em;
+    font-size:11px !important;
+  }
+
+  .number_position{
+    .n1{
+      margin-left: 0.5em !important;
+    }
+    .n2{
+      margin-left: 2.5em !important;
+    }  
   }
 }

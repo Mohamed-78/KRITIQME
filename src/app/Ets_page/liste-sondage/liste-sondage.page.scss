@@ -144,3 +144,13 @@ ion-content{
     left: 8.7em !important;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .title-position > h5 {
+    margin-top:1.5em !important;
+  }
+
+  .title-position > .back-btn{
+    margin-top:1.5em !important;
+  }
+}

@@ -37,9 +37,10 @@
 
  <h6>Type de pièce</h6>
  <ion-item id="select">
-   <ion-select value="PI" okText="Choisir" cancelText="Fermer" mode="ios" >
-    <ion-select-option value="PI">Pièce d'identité</ion-select-option>
+   <ion-select value="CI" okText="Choisir" cancelText="Fermer" mode="ios" >
+    <ion-select-option value="CI">Carte d'identité</ion-select-option>
     <ion-select-option value="PA">Passeport</ion-select-option>
+    <ion-select-option value="AI">Attestion d'identité</ion-select-option>
   </ion-select>
 </ion-item>
 
@@ -72,18 +73,22 @@
 </ion-item>
 
 <h6>Catégorie socio-professionnelle</h6>
-<ion-item>
- <ion-input type="text"></ion-input>
+<ion-item id="select">
+ <ion-select value="IN" okText="Choisir" cancelText="Fermer" mode="ios" >
+  <ion-select-option value="INS">Instituteur</ion-select-option>
+  <ion-select-option value="IN">Infographe</ion-select-option>
+  <ion-select-option value="AU">Autres</ion-select-option>
+</ion-select>
 </ion-item>
 
 <h6>Commune</h6>
 <ion-item>
- <ion-input type="photo"></ion-input>
+ <ion-input type="text"></ion-input>
 </ion-item>
 
-<h6>Pays</h6>
+<h6>Ville</h6>
 <ion-item>
- <ion-input type="photo"></ion-input>
+ <ion-input type="text"></ion-input>
 </ion-item>
 
 <div class="bottom-section">

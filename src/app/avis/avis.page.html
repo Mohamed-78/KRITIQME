@@ -1,9 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="title-position">
-      <ion-button fill="clear" [routerLink]="['/participe-vote']">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
+      <ion-back-button icon="arrow-back" size="small"></ion-back-button>
       <h5>Donner un avis</h5>
       <ion-button fill="clear">
         <ion-icon name="search" class="search"></ion-icon>
@@ -13,10 +11,11 @@
 </ion-header>
 <ion-content>
   <h6 align="center" routerLink="/avis-recent"><u>Afficher les avis les plus récents</u></h6>
-  <ion-item>
-    <ion-textarea rows="6" cols="20" inputmode="text"></ion-textarea>
-  </ion-item>
-  <h6 class="count">0/260</h6>
+  <div class="ion-padding">
+    <ion-textarea rows="6" cols="20" inputmode="text" [maxlength]="maxChars" [(ngModel)]="avis">
+    </ion-textarea>
+  </div>
+  <h6 class="count">{{avis.length}} / {{maxChars}}</h6>
   <div class="button ion-padding">
     <ion-button size="small" mode="ios">Envoyer</ion-button>
   </div>

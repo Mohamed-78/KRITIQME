@@ -4,6 +4,7 @@
 
 ion-header{
   ion-toolbar{
+
     --background: #0394DD;
     height: 4.5em;
     h5{
@@ -22,6 +23,11 @@ ion-header{
     ion-icon.search{
       visibility: hidden;
     }
+
+    ion-back-button{
+      --color:white;
+      --icon-font-size:21px;
+    }
   }
 
 }
@@ -38,17 +44,17 @@ ion-content{
     color: grey;
   }
 
-  ion-item {
+/*   ion-item {
     --ion-item-background: transparent;
     --border-width: 0;
     --inner-border-width: 0;
     --highlight-color-focused: none;
+  } */
 
-    ion-textarea {
-      border: 1px solid #E3E6D7;
-      border-radius: 8px;
-      padding: 1em;
-    }
+  ion-textarea {
+    border: 1px solid #E3E6D7;
+    border-radius: 8px;
+    padding: 0.5em;
   }
 
   .button{

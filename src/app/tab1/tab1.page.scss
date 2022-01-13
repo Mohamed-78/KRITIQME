@@ -114,3 +114,16 @@ ion-content{
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+
+  .seperator_first{
+    hr {
+      width: 40% !important;
+      height: 3px;
+      background: #0394DD;
+      margin-top:-1.1em;
+      margin-right: -2em;
+    }
+  }
+}

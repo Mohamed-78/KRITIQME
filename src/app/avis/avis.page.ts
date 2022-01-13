@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvisPage implements OnInit {
 
+  maxChars = 5;
+  avis = '';
+  chars = 0;
+
   constructor() { }
 
   ngOnInit() {

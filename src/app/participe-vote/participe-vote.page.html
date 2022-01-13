@@ -1,9 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="title-position">
-      <ion-button fill="clear" *ngIf="!toggled" [routerLink]="['/tabs/tab1']">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
+      <ion-back-button icon="arrow-back" *ngIf="!toggled" size="small"></ion-back-button>
       <h5 *ngIf="!toggled">Participer au vote</h5>
       <ion-button fill="clear" *ngIf="!toggled" (click)="toggle()">
         <ion-icon name="search" class="search-position"></ion-icon>
@@ -85,7 +83,7 @@
       <ion-card>
         <img src="../../assets/img/a3.jpg">
         <ion-card-content>
-          <h6>N’guessan B.P Amessan<br>
+          <h6>N’guessan Amessan<br>
             <span>Fonction:Artiste auteur-composi...</span><br>
             <span>Position:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span>
             <br>
@@ -113,7 +111,7 @@
       <ion-card>
         <img src="../../assets/img/a5.jpg">
         <ion-card-content>
-          <h6>N’Guessan B.Yves-Aymard<br>
+          <h6>N.Yves-Aymard<br>
             <span>Fonction:Animateur radio -télé</span><br>
             <span>Position:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span>
             <br>
@@ -145,7 +143,7 @@
           <img src="../../assets/img/a2.jpg">
           <ion-card-content>
             <h6>Didier Drogba<br>
-              <span>Fonction:Footaballeur&nbsp;international</span><br>
+              <span>Fonction:Footaballeur Pro</span><br>
               <span>Position:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span>
               <br>
               <span>Total votes:45097</span>
@@ -172,7 +170,7 @@
         <ion-card>
           <img src="../../assets/img/a3.jpg">
           <ion-card-content>
-            <h6>N’guessan B.P Amessan<br>
+            <h6>N’guessan Amessan<br>
               <span>Fonction:Artiste auteur-composi...</span><br>
               <span>Position:3 /10 <ion-icon name="trending-up" color="success"></ion-icon></span>
               <br>

@@ -22,6 +22,11 @@ ion-header{
     ion-icon.search{
       visibility: hidden;
     }
+
+    ion-back-button{
+      --color:white;
+      --icon-font-size:21px;
+    }
   }
 
 }

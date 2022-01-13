@@ -1,9 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <div class="title-position">
-      <ion-button fill="clear" [routerLink]="['/creer-activite']">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
+      <ion-back-button icon="arrow-back" size="small"></ion-back-button>
       <h5>Configuration du sondage</h5>
       <ion-button fill="clear">
         <ion-icon name="search" class="search"></ion-icon>
@@ -42,7 +40,7 @@
     </div>
 
     <div class="bottom-section">
-      <ion-button fill="clear" class="back">PRECEDENT</ion-button>
+      <ion-button class="back" fill="clear">PRECEDENT</ion-button>
       <ion-button class="next" routerLink="/creersondage2">SUIVANT</ion-button>
     </div>
 

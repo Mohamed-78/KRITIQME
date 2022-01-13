@@ -22,6 +22,11 @@ ion-header{
       .search-position{
         margin-top:0.3em;
       }
+
+      ion-back-button{
+        --color:grey;
+        --icon-font-size:21px;
+      }
   }
 
   ion-searchbar{
@@ -93,5 +98,45 @@ ion-content{
  h6 > ion-button{
   margin-top: -1.3em !important;
  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  ion-card{
+    display:flex;
+    justify-content: left;
+    border-radius:8px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    max-height: 8em;
+    overflow: auto;
+    box-shadow: none;
+    overflow-y: hidden !important;
+
+    h6{
+      line-height: normal !important;
+      color:black;
+      font-weight: 550;
+    }
+
+    span{
+      font-size:12px;
+      font-weight:540;
+    }
+
+    ion-icon{
+      font-size:20px;
+      margin-top:-0.2em;
+    }
+
+    ion-button{
+      margin-top: -4em !important;
+      margin-left: 8.2em !important;
+      --background: #0394DD;
+      --border-radius:10px;
+    }
+  }
 
 }

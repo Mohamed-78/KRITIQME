@@ -32,7 +32,7 @@ export class SinglePagePage{
         labels: ['BJP', 'Congress'],
         datasets: [{
           label: 'Sondage',
-          borderWidth: 5,
+          borderWidth: 6,
           data: [90,10],
           backgroundColor: [
           '#24e081',
@@ -45,9 +45,10 @@ export class SinglePagePage{
         }]
       },
       options: {
-        cutout: 55
+        cutout: 50
       }
     });
   }
 
+  
 }

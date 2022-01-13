@@ -30,6 +30,20 @@ ion-content{
     font-weight: 1000;
   }
 
+  .header{
+      position:absolute;
+      z-index:2;
+      top: 1em;
+      margin-left: 7.7em;
+      margin-right: 7.7em;
+      img{
+        width: 13em;
+        height:11em;
+        border-radius: 10px;
+        border: 3px solid white;
+      }
+  }
+
   span{
     font-size: 11.5px;
     color: grey;
@@ -237,4 +251,127 @@ ion-content{
   .submit_avis > input {
     min-width: 260px !important;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .chart-container {
+    position: relative;
+    height: 10vh;
+    width: 41vw !important;
+
+    h5{
+      margin-top:-2.7em !important;
+      margin-left:0.9em !important;
+      font-size:30px  ;
+      font-weight:bold;
+      color:grey;
+    }
+  }
+
+  .left_element{
+    margin-top:-2.5em;
+    margin-left:3em !important;
+
+    .first_title{
+      margin-left:5em !important;
+      font-size:12px;
+    }
+
+    .second_title{
+      margin-left:5em !important;
+      font-size:12px;
+    }
+  }
+
+  .header{
+    position:absolute;
+    z-index:2;
+    top: 1em;
+    img{
+      min-width: 10em !important;
+      height:10em !important;
+      border-radius: 10px;
+      border: 3px solid white;
+      margin-left:-2.6em !important;
+    }
+  }
+
+  .position{
+    margin-top: 6.5em !important;
+  }
+
+  .info{
+    margin-top:-1em !important;
+  }
+
+  .submit_avis{
+    display:flex;
+    justify-content:space-between;
+
+    img{
+      border-radius:50px;
+      width:30px;
+      height:30px;
+    }
+
+    input {
+      min-width: 200px !important;
+      height: 38px;
+      border: 1px solid #e2e2e2;
+      font-size: 15px;
+      border-radius:20px;
+      color: #000;
+      padding: 1em;
+    }
+
+    input:focus{
+      outline: 1px solid #0394DD;
+    }
+
+    ion-icon{
+     color: #0394DD;
+     font-size:25px;
+     margin-top:0.2em;
+    }
+  }
+
+  .middle-button{
+    margin-top:-0.8em;
+    margin-bottom: 1em;
+    display:flex;
+    justify-content:center;
+    .btn_red{
+      --border-radius:10px;
+      --background: #dd0000;
+      min-width: 130px !important;
+      height: 45px;
+    }
+
+    .btn_success{
+      --border-radius:10px;
+      --background: #24e081;
+      min-width: 130px !important;
+      height: 45px;
+    }
+
+    img{
+      width:35px;
+    }
+  }
+
+  .avis_position{
+    display:flex;
+    justify-content:space-between;
+
+    h6:first-child{
+      font-size:18px !important;
+      margin-top:0.5em !important;
+    }
+
+    h6:last-child{
+      text-decoration: underline;
+      color: #0394DD;
+    }
+  }
+
 }

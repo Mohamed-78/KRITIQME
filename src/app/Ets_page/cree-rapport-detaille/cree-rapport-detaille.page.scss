@@ -22,6 +22,11 @@ ion-header{
     ion-icon.search{
       visibility: hidden;
     }
+
+    ion-back-button{
+      --color:white;
+      --icon-font-size:21px;
+    }
   }
 
 }
@@ -111,7 +116,7 @@ ion-content{
     align-items: center;
     margin-top:2em;
     margin-bottom:1em;
-    .btn {
+    .next {
       height: 50px;
       width: 372px;
       font-size: 15px;

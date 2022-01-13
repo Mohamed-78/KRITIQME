@@ -4,24 +4,29 @@
 
 ion-header{
   ion-toolbar{
-      --background: #0394DD;
-      height: 4.5em;
-      h5{
-        color: #FFFFFF;
-      }
+    --background: #0394DD;
+    height: 4.5em;
+    h5{
+      color: #FFFFFF;
+    }
 
-      .title-position{
-        display:flex;
-        justify-content:space-between;
-      }
+    .title-position{
+      display:flex;
+      justify-content:space-between;
+    }
 
-      ion-icon{
-        color:white;
-      }
+    ion-icon{
+      color:white;
+    }
 
-      ion-icon.search{
-        visibility: hidden;
-      }
+    ion-icon.search{
+      visibility: hidden;
+    }
+
+    ion-back-button{
+      --color:white;
+      --icon-font-size:21px;
+    }
   }
 
 }
